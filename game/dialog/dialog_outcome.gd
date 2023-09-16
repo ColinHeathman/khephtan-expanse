@@ -1,0 +1,2 @@
+class_name DialogOutcome
+extends Resource

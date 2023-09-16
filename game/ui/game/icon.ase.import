@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://jytb51g411x7"
+path="res://.godot/imported/icon.ase-c98ae7c6cd676e8f853cb29734589a9b.res"
+
+[deps]
+
+source_file="res://game/ui/game/icon.ase"
+dest_files=["res://.godot/imported/icon.ase-c98ae7c6cd676e8f853cb29734589a9b.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=false

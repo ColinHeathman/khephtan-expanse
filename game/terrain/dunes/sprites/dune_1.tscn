@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://yl6dw60lb1ax"]
+
+[ext_resource type="Texture2D" uid="uid://dli7qad83t3r0" path="res://game/terrain/dunes/textures/dune_1.tres" id="1_0aab0"]
+[ext_resource type="Texture2D" uid="uid://bdrj4fkvswjfy" path="res://game/terrain/dunes/textures/dune_1_shadow.tres" id="2_u0ojp"]
+
+[node name="Dune1" type="Node2D"]
+y_sort_enabled = true
+
+[node name="DuneShadow" type="Sprite2D" parent="." groups=["Shadows"]]
+position = Vector2(-3, -6)
+texture = ExtResource("2_u0ojp")
+
+[node name="Dune" type="Sprite2D" parent="."]
+texture = ExtResource("1_0aab0")

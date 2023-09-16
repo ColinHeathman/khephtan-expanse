@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://bsao3ckdawdr8"]
+
+[ext_resource type="PackedScene" uid="uid://dbp0vyev2mxkk" path="res://game/map_place/map_place.tscn" id="1_u6xuc"]
+[ext_resource type="Texture2D" uid="uid://l30epao5qkiv" path="res://game/places/village/textures/village_background.tres" id="2_poynf"]
+[ext_resource type="Texture2D" uid="uid://cf3mutcpkw20n" path="res://game/places/village/textures/village_shadows.tres" id="3_to4t3"]
+[ext_resource type="Texture2D" uid="uid://ca1ngfywvcnjf" path="res://game/places/village/textures/village.tres" id="4_i7qbu"]
+[ext_resource type="Material" uid="uid://cytusu1ydwi2h" path="res://game/places/unshaded_lights_material.tres" id="4_n0akw"]
+[ext_resource type="Texture2D" uid="uid://drvepgb03js1f" path="res://game/places/village/textures/village_lights.tres" id="5_nx8oj"]
+
+[node name="Village" instance=ExtResource("1_u6xuc")]
+z_index = -1
+y_sort_enabled = false
+
+[node name="VillageBackground" type="Sprite2D" parent="." index="0"]
+z_index = -2
+position = Vector2(0, -1)
+texture = ExtResource("2_poynf")
+
+[node name="KeyMap" parent="." index="1"]
+position = Vector2(3, 11)
+layer_0/tile_data = PackedInt32Array(0, 0, 0, 65535, 65536, 0, -2, 65536, 0, -65537, 65536, 0, -131072, 65536, 0, -65536, 65536, 0, -1, 65536, 0)
+
+[node name="Village" type="Sprite2D" parent="." index="2"]
+position = Vector2(1, -1)
+texture = ExtResource("4_i7qbu")
+
+[node name="VillageLights" type="Sprite2D" parent="." index="3" groups=["Lights"]]
+modulate = Color(1, 1, 1, 0)
+material = ExtResource("4_n0akw")
+position = Vector2(1, -1)
+texture = ExtResource("5_nx8oj")
+
+[node name="VillageShadows" type="Sprite2D" parent="." index="4" groups=["Shadows"]]
+z_index = -1
+position = Vector2(1, -1)
+texture = ExtResource("3_to4t3")

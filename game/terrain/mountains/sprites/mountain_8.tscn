@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjkroiapr7yc6"]
+
+[ext_resource type="PackedScene" uid="uid://bpvkpx3d2361j" path="res://game/terrain/mountains/sprites/mountain_1.tscn" id="1_ihuku"]
+[ext_resource type="Texture2D" uid="uid://b3vv5fg3qtld7" path="res://game/terrain/mountains/textures/mountain_8_shadow.tres" id="2_6l3p0"]
+[ext_resource type="Texture2D" uid="uid://l0gewhqjrkkx" path="res://game/terrain/mountains/textures/mountain_8.tres" id="3_aw0so"]
+
+[node name="Mountain8" instance=ExtResource("1_ihuku")]
+
+[node name="Shadow" parent="." index="0"]
+position = Vector2(-7, -6)
+texture = ExtResource("2_6l3p0")
+
+[node name="Albedo" parent="." index="1"]
+texture = ExtResource("3_aw0so")

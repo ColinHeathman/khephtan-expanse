@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://csi65n15tcqur"]
+
+[ext_resource type="Texture2D" path="res://.godot/imported/mountains.ase-1a0e09fcecec1976cc5acb9742fcffce.res" id="1_o1755"]
+
+[resource]
+atlas = ExtResource("1_o1755")
+region = Rect2(984, 16, 1, 5)

@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://cl6twi1qdoite"
+path="res://.godot/imported/roads.ase-fd3728721e63fd8ce9c5eae5f4056e59.res"
+
+[deps]
+
+source_file="res://game/tiles/roads.ase"
+dest_files=["res://.godot/imported/roads.ase-fd3728721e63fd8ce9c5eae5f4056e59.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=false

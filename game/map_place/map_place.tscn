@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbp0vyev2mxkk"]
+
+[ext_resource type="Script" path="res://game/map_place/map_place.gd" id="1_ku83t"]
+[ext_resource type="TileSet" uid="uid://dkpci6mikttiv" path="res://game/map_place/key_tileset.tres" id="3_8oa6f"]
+
+[node name="MapPlace" type="Node2D" groups=["MapPlaces", "Resettable"]]
+y_sort_enabled = true
+script = ExtResource("1_ku83t")
+
+[node name="KeyMap" type="TileMap" parent="."]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.490196)
+tile_set = ExtResource("3_8oa6f")
+format = 2

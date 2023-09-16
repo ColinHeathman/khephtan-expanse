@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://2ponyclveer2"
+path="res://.godot/imported/village.ase-31060f0ef98cb7108afd2e2ec90223db.res"
+
+[deps]
+
+source_file="res://game/places/camp/village.ase"
+dest_files=["res://.godot/imported/village.ase-31060f0ef98cb7108afd2e2ec90223db.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=false

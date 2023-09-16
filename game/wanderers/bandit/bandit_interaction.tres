@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=6 format=3 uid="uid://ydk7w36wxq71"]
+
+[ext_resource type="Resource" uid="uid://d0h6hecvq1u7k" path="res://game/wanderers/bandit/pay_off.tres" id="1_jkmy3"]
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_qf8e8"]
+[ext_resource type="Resource" uid="uid://c4t1bwb4nmjfy" path="res://game/wanderers/bandit/diplo_fail.tres" id="2_g5hpj"]
+[ext_resource type="Resource" uid="uid://dy7el71e7rwkm" path="res://game/wanderers/bandit/diplo_pass.tres" id="3_7o2ki"]
+[ext_resource type="Resource" uid="uid://dk87tvfgqljrk" path="res://game/wanderers/bandit/fight_off.tres" id="4_ilwsn"]
+
+[resource]
+script = ExtResource("1_qf8e8")
+override_minimum_width = 450
+outcome_label = ""
+outcome_color = 0
+message = "A bandit!
+
+\"Your money or your life\""
+bonus_message = ""
+ok_message = ""
+hit_points_range = Array[int]([1, 2])
+hit_points_message = "Defend yourself"
+hit_points_outcome = ExtResource("4_ilwsn")
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 20
+diplomacy_message = "Try and talk to the bandit"
+diplomacy_pass = ExtResource("3_7o2ki")
+diplomacy_fail = ExtResource("2_g5hpj")
+currency_cost = 5
+currency_message = "Pay him off"
+currency_outcome = ExtResource("1_jkmy3")

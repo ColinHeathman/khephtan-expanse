@@ -1,0 +1,12 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://v4n0u58auebb"]
+
+[ext_resource type="Texture2D" uid="uid://bccpkr14mqkyk" path="res://game/ui/themes/pixel_textured/brown/text/textures/text_focus.tres" id="1_7uj5y"]
+
+[resource]
+texture = ExtResource("1_7uj5y")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1

@@ -1,0 +1,9 @@
+[gd_resource type="Environment" load_steps=2 format=3 uid="uid://dsjkj3xbut2n3"]
+
+[ext_resource type="Sky" uid="uid://co2ijrynejdyg" path="res://game/ui/menus/main_menu/sky.tres" id="1_o6j0l"]
+
+[resource]
+background_mode = 2
+sky = ExtResource("1_o6j0l")
+ambient_light_source = 1
+reflected_light_source = 1

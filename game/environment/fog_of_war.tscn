@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://caybn8e0jdl3o"]
+
+[ext_resource type="Script" path="res://game/environment/fog_of_war.gd" id="1_01oee"]
+[ext_resource type="TileSet" uid="uid://djlhguf5ro1ms" path="res://game/environment/fog_tile_set.tres" id="2_kcb2a"]
+[ext_resource type="Shader" uid="uid://36orv74d3upb" path="res://game/environment/black_wall_vs.tres" id="2_umnt2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ybccf"]
+shader = ExtResource("2_umnt2")
+
+[node name="FogOfWar" type="CanvasLayer"]
+layer = 25
+follow_viewport_enabled = true
+script = ExtResource("1_01oee")
+
+[node name="FogTileMap" type="TileMap" parent="."]
+unique_name_in_owner = true
+modulate = Color(0, 0, 0, 0.501961)
+tile_set = ExtResource("2_kcb2a")
+format = 2
+
+[node name="BlackTileMap" type="TileMap" parent="."]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_ybccf")
+tile_set = ExtResource("2_kcb2a")
+format = 2

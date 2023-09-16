@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://dl24ycxp1s05r"
+path="res://.godot/imported/cover.ase-ee7ab1d92e87cc2b4ce57f3316de6f91.res"
+
+[deps]
+
+source_file="res://game/ui/game/cover.ase"
+dest_files=["res://.godot/imported/cover.ase-ee7ab1d92e87cc2b4ce57f3316de6f91.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=false

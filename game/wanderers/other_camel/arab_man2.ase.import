@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://w0546pj718r4"
+path="res://.godot/imported/arab_man2.ase-7cef573e0e283f60c221b44bb717ae15.res"
+
+[deps]
+
+source_file="res://game/wanderers/other_camel/arab_man2.ase"
+dest_files=["res://.godot/imported/arab_man2.ase-7cef573e0e283f60c221b44bb717ae15.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=false

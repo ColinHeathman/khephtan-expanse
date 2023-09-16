@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://bmeobo5yahqon"
+path="res://.godot/imported/red_sand.ase-17e0e70f3693c3f145a40264766286c1.res"
+
+[deps]
+
+source_file="res://game/tiles/red_sand.ase"
+dest_files=["res://.godot/imported/red_sand.ase-17e0e70f3693c3f145a40264766286c1.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=false

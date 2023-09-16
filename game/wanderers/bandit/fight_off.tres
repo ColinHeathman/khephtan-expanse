@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=2 format=3 uid="uid://dk87tvfgqljrk"]
+
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_g48b2"]
+
+[resource]
+script = ExtResource("1_g48b2")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "The bandit slashes at you, but your reactions are quick
+
+Despite a few cuts and bruises,you manage to disarm
+ the bandit and they run."
+bonus_message = ""
+ok_message = "OK"
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

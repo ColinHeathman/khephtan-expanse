@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://c2bn0kwml605r"]
+
+[ext_resource type="Texture2D" uid="uid://c0j7uihoiqr1k" path="res://game/terrain/mountains/textures/mountains_spritesheet.png" id="1_71skx"]
+
+[resource]
+atlas = ExtResource("1_71skx")
+region = Rect2(1127, 166, 79, 28)

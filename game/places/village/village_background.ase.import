@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://d3compi8prokv"
+path="res://.godot/imported/village_background.ase-ca52c48bf214e8ae68f10292dcc13b15.res"
+
+[deps]
+
+source_file="res://game/places/village/village_background.ase"
+dest_files=["res://.godot/imported/village_background.ase-ca52c48bf214e8ae68f10292dcc13b15.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=true

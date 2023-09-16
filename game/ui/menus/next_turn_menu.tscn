@@ -1,0 +1,68 @@
+[gd_scene load_steps=6 format=3 uid="uid://c6sfu82o6p23y"]
+
+[ext_resource type="Script" path="res://game/ui/menus/next_turn_menu.gd" id="1_la3hf"]
+[ext_resource type="Theme" uid="uid://shw4guvfs7oy" path="res://game/ui/themes/pixel_textured/brown/theme.tres" id="1_u8iqu"]
+[ext_resource type="Texture2D" uid="uid://ddxmidbvq4u6n" path="res://game/ui/menus/player_stats_picker/crates.ase" id="3_5ay4s"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_0aryi"]
+device = -1
+keycode = 4194309
+
+[sub_resource type="Shortcut" id="Shortcut_0v2nk"]
+events = [SubResource("InputEventKey_0aryi")]
+
+[node name="NextTurnMenu" type="CanvasLayer"]
+layer = 100
+visible = false
+script = ExtResource("1_la3hf")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -172.0
+offset_top = -76.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("1_u8iqu")
+
+[node name="Panel" type="PanelContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Panel"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TurnLabel" type="Label" parent="MarginContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Turn 0"
+
+[node name="SuppliesLabelTextureRect" type="TextureRect" parent="MarginContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_5ay4s")
+stretch_mode = 2
+
+[node name="SuppliesLabel" type="Label" parent="MarginContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Supplies 0"
+
+[node name="EndTurnButton" type="Button" parent="MarginContainer/Panel/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(256, 64)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 40
+shortcut = SubResource("Shortcut_0v2nk")
+text = "End Turn"
+
+[connection signal="pressed" from="MarginContainer/Panel/MarginContainer/VBoxContainer/EndTurnButton" to="." method="_on_end_turn_button_pressed"]

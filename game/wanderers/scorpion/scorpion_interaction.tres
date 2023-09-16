@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=5 format=3 uid="uid://nfpex7bvo1oe"]
+
+[ext_resource type="Resource" uid="uid://dkf275hm61pjn" path="res://game/wanderers/scorpion/fight_off.tres" id="1_k0thy"]
+[ext_resource type="Resource" uid="uid://bhdwv7q0j65du" path="res://game/wanderers/scorpion/wisdom_fail.tres" id="3_pndk4"]
+[ext_resource type="Resource" uid="uid://l3hwwcv2s7y6" path="res://game/wanderers/scorpion/wisdom_pass.tres" id="4_37ncv"]
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="5_wpguf"]
+
+[resource]
+script = ExtResource("5_wpguf")
+override_minimum_width = 500
+outcome_label = ""
+outcome_color = 0
+message = "A giant scorpion attacks!"
+bonus_message = ""
+ok_message = ""
+hit_points_range = Array[int]([2, 3])
+hit_points_message = "Defend yourself"
+hit_points_outcome = ExtResource("1_k0thy")
+wisdom_dc = 20
+wisdom_message = "Try and outsmart the arachnid"
+wisdom_pass = ExtResource("4_37ncv")
+wisdom_fail = ExtResource("3_pndk4")
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

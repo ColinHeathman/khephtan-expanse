@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://jihs66fawlr2"
+path="res://.godot/imported/arab_man.ase-2dbb331c475a3dbdfa7cf6a6e5f1afb4.res"
+
+[deps]
+
+source_file="res://game/player/arab_man.ase"
+dest_files=["res://.godot/imported/arab_man.ase-2dbb331c475a3dbdfa7cf6a6e5f1afb4.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=false

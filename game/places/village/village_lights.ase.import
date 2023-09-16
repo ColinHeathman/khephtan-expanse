@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://dk8wq73dui5sn"
+path="res://.godot/imported/village_lights.ase-7e280da6efa8e3b9910980dfe233f8fd.res"
+
+[deps]
+
+source_file="res://game/places/village/village_lights.ase"
+dest_files=["res://.godot/imported/village_lights.ase-7e280da6efa8e3b9910980dfe233f8fd.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=true

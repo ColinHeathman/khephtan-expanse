@@ -1,0 +1,17 @@
+[remap]
+
+importer="demos.sillymaterial"
+type="StandardMaterial3D"
+uid="uid://dtxg35yyvcjlj"
+path="res://.godot/imported/test.custom_mat-6ae43cdfbdd9b77b9329865787a119ad.material"
+
+[deps]
+
+files=["res://.godot/imported/test.custom_mat-6ae43cdfbdd9b77b9329865787a119ad.next_pass.material"]
+
+source_file="res://game/test.custom_mat"
+dest_files=["res://.godot/imported/test.custom_mat-6ae43cdfbdd9b77b9329865787a119ad.material", "res://.godot/imported/test.custom_mat-6ae43cdfbdd9b77b9329865787a119ad.next_pass.material"]
+
+[params]
+
+use_red_anyway=true

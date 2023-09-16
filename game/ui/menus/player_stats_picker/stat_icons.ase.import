@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://t0fdvybde7du"
+path="res://.godot/imported/stat_icons.ase-cbdc69d763c61d02a3cc8668289a8b15.res"
+
+[deps]
+
+source_file="res://game/ui/menus/player_stats_picker/stat_icons.ase"
+dest_files=["res://.godot/imported/stat_icons.ase-cbdc69d763c61d02a3cc8668289a8b15.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=true

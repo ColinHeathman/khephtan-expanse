@@ -1,0 +1,33 @@
+{ "frames": {
+   "masks.ase": {
+    "frame": { "x": 0, "y": 0, "w": 96, "h": 108 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 108 },
+    "sourceSize": { "w": 96, "h": 108 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.3-beta21-x64",
+  "image": "masks_spritesheet.png",
+  "format": "RGBA8888",
+  "size": { "w": 96, "h": 108 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "masks" },
+   { "name": "base", "group": "masks", "opacity": 255, "blendMode": "normal" },
+   { "name": "14", "group": "masks", "opacity": 255, "blendMode": "normal" },
+   { "name": "10", "group": "masks", "opacity": 255, "blendMode": "normal" },
+   { "name": "8", "group": "masks", "opacity": 255, "blendMode": "normal" },
+   { "name": "6", "group": "masks", "opacity": 255, "blendMode": "normal" },
+   { "name": "2", "group": "masks", "opacity": 255, "blendMode": "normal" },
+   { "name": "0", "group": "masks", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

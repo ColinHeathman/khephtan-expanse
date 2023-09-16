@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bao2mvj8q3ak8"]
+
+[ext_resource type="PackedScene" uid="uid://dbp0vyev2mxkk" path="res://game/map_place/map_place.tscn" id="1_gx5ye"]
+
+[node name="MountainCluster" instance=ExtResource("1_gx5ye")]
+
+[node name="KeyMap" parent="." index="0"]
+layer_0/tile_data = PackedInt32Array(-1, 65536, 0, 0, 65536, 0, 65535, 65536, 0)

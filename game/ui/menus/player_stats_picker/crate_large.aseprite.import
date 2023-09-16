@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://b77poedwhxppo"
+path="res://.godot/imported/crate_large.aseprite-e075dd640668384a8996de78ae150c7e.res"
+
+[deps]
+
+source_file="res://game/ui/menus/player_stats_picker/crate_large.aseprite"
+dest_files=["res://.godot/imported/crate_large.aseprite-e075dd640668384a8996de78ae150c7e.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=false

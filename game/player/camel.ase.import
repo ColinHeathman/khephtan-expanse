@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://dtquy7m7svhaw"
+path="res://.godot/imported/camel.ase-625c4350a97dc6cfeaf03f0b7ad14f94.res"
+
+[deps]
+
+source_file="res://game/player/camel.ase"
+dest_files=["res://.godot/imported/camel.ase-625c4350a97dc6cfeaf03f0b7ad14f94.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=false

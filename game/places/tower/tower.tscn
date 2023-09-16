@@ -1,0 +1,36 @@
+[gd_scene load_steps=8 format=3 uid="uid://c86h22ah72lj2"]
+
+[ext_resource type="PackedScene" uid="uid://dbp0vyev2mxkk" path="res://game/map_place/map_place.tscn" id="1_pytlx"]
+[ext_resource type="Texture2D" uid="uid://cx70dtn0baex7" path="res://game/places/tower/textures/tower_albedo.tres" id="2_c5v0l"]
+[ext_resource type="Texture2D" uid="uid://cc73ump3fotda" path="res://game/places/tower/textures/tower_shadow.tres" id="2_mj87x"]
+[ext_resource type="Resource" uid="uid://chgwwbqyrlt84" path="res://game/places/tower/tower_dialog.tres" id="2_ri6js"]
+[ext_resource type="Texture2D" uid="uid://jvr5f4kxt56w" path="res://game/places/tower/textures/tower_shading.tres" id="3_85kte"]
+[ext_resource type="Script" path="res://game/dialog/dialog_deck.gd" id="3_hxrpx"]
+
+[sub_resource type="Resource" id="Resource_fcdic"]
+script = ExtResource("3_hxrpx")
+dialogs = Array[Resource("res://game/dialog/dialog.gd")]([ExtResource("2_ri6js")])
+
+[node name="Tower" instance=ExtResource("1_pytlx")]
+fix_position_at_start = true
+dialog_deck = SubResource("Resource_fcdic")
+visited_dialog = ExtResource("2_ri6js")
+
+[node name="KeyMap" parent="." index="0"]
+layer_0/tile_data = PackedInt32Array(0, 0, 0, 65535, 65536, 0, -1, 65536, 0)
+
+[node name="TowerAlbedo" type="Sprite2D" parent="." index="1"]
+y_sort_enabled = true
+position = Vector2(1, -23)
+texture = ExtResource("2_c5v0l")
+
+[node name="TowerShading" type="Sprite2D" parent="." index="2"]
+y_sort_enabled = true
+position = Vector2(1, -23)
+texture = ExtResource("3_85kte")
+
+[node name="TowerShadow" type="Sprite2D" parent="." index="3" groups=["Shadows"]]
+y_sort_enabled = true
+position = Vector2(-22, -31)
+texture = ExtResource("2_mj87x")
+offset = Vector2(0, 10)

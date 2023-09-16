@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://cwuopwh7e2w2h"
+path="res://.godot/imported/masks.ase-eccf10a9325ec73b71977420af38a551.res"
+
+[deps]
+
+source_file="res://game/tiles/masks.ase"
+dest_files=["res://.godot/imported/masks.ase-eccf10a9325ec73b71977420af38a551.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=false

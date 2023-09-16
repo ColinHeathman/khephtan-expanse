@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://cr2wrwjanwkh"]
+
+[ext_resource type="Texture2D" uid="uid://bfvi5h7grmyle" path="res://game/terrain/dunes/textures/dunes_spritesheet.png" id="1_a20iv"]
+
+[resource]
+atlas = ExtResource("1_a20iv")
+region = Rect2(111, 0, 104, 30)

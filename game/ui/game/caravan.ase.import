@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://dsgtix5syvn0x"
+path="res://.godot/imported/caravan.ase-5d5cebca2d10e2b01b71501fb6f86690.res"
+
+[deps]
+
+source_file="res://game/ui/game/caravan.ase"
+dest_files=["res://.godot/imported/caravan.ase-5d5cebca2d10e2b01b71501fb6f86690.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=false

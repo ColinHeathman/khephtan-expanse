@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://cwg4asjk2ga1a"
+path="res://.godot/imported/village_shadows.ase-401763145218a5e5ef478d02e95a9fd0.res"
+
+[deps]
+
+source_file="res://game/places/village/village_shadows.ase"
+dest_files=["res://.godot/imported/village_shadows.ase-401763145218a5e5ef478d02e95a9fd0.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=true

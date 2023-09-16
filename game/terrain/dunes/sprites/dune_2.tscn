@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://caihi317m3gcj"]
+
+[ext_resource type="PackedScene" uid="uid://yl6dw60lb1ax" path="res://game/terrain/dunes/sprites/dune_1.tscn" id="1_0d78v"]
+[ext_resource type="Texture2D" uid="uid://caekv2k4whmx1" path="res://game/terrain/dunes/textures/dune_2.tres" id="1_4g0ha"]
+[ext_resource type="Texture2D" uid="uid://cr2wrwjanwkh" path="res://game/terrain/dunes/textures/dune_2_shadow.tres" id="2_iqhb4"]
+
+[node name="Dune2" instance=ExtResource("1_0d78v")]
+
+[node name="DuneShadow" parent="." index="0"]
+texture = ExtResource("2_iqhb4")
+
+[node name="Dune" parent="." index="1"]
+texture = ExtResource("1_4g0ha")

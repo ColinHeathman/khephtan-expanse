@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=2 format=3 uid="uid://ca2nlotag2vkx"]
+
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_h4n1r"]
+
+[resource]
+script = ExtResource("1_h4n1r")
+outcome_label = ""
+outcome_color = 0
+message = "You have no food or water.
+Your body is starting to feel
+ the effects."
+bonus_message = ""
+ok_message = "OK"
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://64uw847jtg2e"
+path="res://.godot/imported/button.ase-909dae61eaf0afab155b36626593f6c5.res"
+
+[deps]
+
+source_file="res://game/ui/themes/pixel_textured/brown/button/button.ase"
+dest_files=["res://.godot/imported/button.ase-909dae61eaf0afab155b36626593f6c5.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=true

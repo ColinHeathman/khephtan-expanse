@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://bax3plsmtp3vp"
+path="res://.godot/imported/dunes.ase-78a90a713a109c4d32bbee69b7377956.res"
+
+[deps]
+
+source_file="res://game/terrain/dunes/dunes.ase"
+dest_files=["res://.godot/imported/dunes.ase-78a90a713a109c4d32bbee69b7377956.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=true

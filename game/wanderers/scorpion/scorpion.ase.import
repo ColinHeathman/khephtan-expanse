@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://dwad7ia27exow"
+path="res://.godot/imported/scorpion.ase-624adff407d33cb30c22ea16fb85153b.res"
+
+[deps]
+
+source_file="res://game/wanderers/scorpion/scorpion.ase"
+dest_files=["res://.godot/imported/scorpion.ase-624adff407d33cb30c22ea16fb85153b.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=false

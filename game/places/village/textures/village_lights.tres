@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://drvepgb03js1f"]
+
+[ext_resource type="Texture2D" uid="uid://bjekuu3h1f7i" path="res://game/places/village/textures/village_lights_spritesheet.png" id="1_kh4eu"]
+
+[resource]
+atlas = ExtResource("1_kh4eu")
+region = Rect2(0, 32, 96, 90)

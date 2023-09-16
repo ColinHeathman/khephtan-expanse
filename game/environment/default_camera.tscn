@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3w50ol8xx36p"]
+
+[ext_resource type="Script" path="res://game/environment/default_camera.gd" id="1_mydm8"]
+
+[node name="Camera2D" type="Camera2D"]
+unique_name_in_owner = true
+enabled = false
+zoom = Vector2(2, 2)
+limit_smoothed = true
+position_smoothing_enabled = true
+script = ExtResource("1_mydm8")

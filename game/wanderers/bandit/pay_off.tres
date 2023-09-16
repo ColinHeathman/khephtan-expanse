@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=3 format=3 uid="uid://d0h6hecvq1u7k"]
+
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_888a4"]
+[ext_resource type="Texture2D" uid="uid://dt0pmy3dudfoo" path="res://game/ui/menus/player_stats_picker/textures/coin_icon.tres" id="1_mceeq"]
+
+[resource]
+script = ExtResource("1_888a4")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You give the bandit some money and they leave"
+bonus_message = "-5"
+bonus_icon = ExtResource("1_mceeq")
+ok_message = "OK"
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

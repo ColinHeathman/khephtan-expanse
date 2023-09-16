@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://i3nop4nciwy3"
+path="res://.godot/imported/panel_brown.ase-01297c80f22df07af39e4bbb1c4820f0.res"
+
+[deps]
+
+source_file="res://game/ui/themes/pixel_textured/brown/panel/panel_brown.ase"
+dest_files=["res://.godot/imported/panel_brown.ase-01297c80f22df07af39e4bbb1c4820f0.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=true

@@ -1,0 +1,231 @@
+[gd_scene load_steps=15 format=3 uid="uid://5u34kqlq74t2"]
+
+[ext_resource type="Script" path="res://game/player/player.gd" id="1_6mw5e"]
+[ext_resource type="Texture2D" uid="uid://jihs66fawlr2" path="res://game/player/arab_man.ase" id="1_bisec"]
+[ext_resource type="Texture2D" uid="uid://dtquy7m7svhaw" path="res://game/player/camel.ase" id="2_a6akr"]
+[ext_resource type="Texture2D" uid="uid://c7p5b331witg4" path="res://game/player/torch_light.png" id="4_dgrxw"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_uliw6"]
+lifetime_randomness = 0.05
+particle_flag_disable_z = true
+gravity = Vector3(0, -250, 0)
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
+color = Color(1, 0.552941, 0.290196, 1)
+hue_variation_max = 0.15
+
+[sub_resource type="Gradient" id="Gradient_4wq73"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.234375, 0.157891, 0.0257813, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_potx0"]
+gradient = SubResource("Gradient_4wq73")
+width = 3
+
+[sub_resource type="Animation" id="Animation_u2cvx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprites/Torch:energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprites/Torch/TorchParticles:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprites/Torch/Sprite2D:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_7imoi"]
+resource_name = "sunrise"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprites/Torch:energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.25, 0.0, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprites/Torch/TorchParticles:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprites/Torch/Sprite2D:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_0rail"]
+resource_name = "sunset"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprites/Torch:energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 0.25]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprites/Torch/TorchParticles:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprites/Torch/Sprite2D:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_flln0"]
+_data = {
+"RESET": SubResource("Animation_u2cvx"),
+"sunrise": SubResource("Animation_7imoi"),
+"sunset": SubResource("Animation_0rail")
+}
+
+[sub_resource type="Animation" id="Animation_mpyr0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprites:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_bxw71"]
+resource_name = "bounce"
+length = 0.125
+step = 0.0625
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprites:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0625, 0.125),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.9, 0.9), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_j3qbd"]
+_data = {
+"RESET": SubResource("Animation_mpyr0"),
+"bounce": SubResource("Animation_bxw71")
+}
+
+[node name="Player" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_6mw5e")
+
+[node name="Sprites" type="Node2D" parent="."]
+
+[node name="Man" type="Sprite2D" parent="Sprites"]
+position = Vector2(-10, -3)
+texture = ExtResource("1_bisec")
+
+[node name="Camel" type="Sprite2D" parent="Sprites"]
+position = Vector2(0, -11)
+texture = ExtResource("2_a6akr")
+
+[node name="Torch" type="PointLight2D" parent="Sprites"]
+position = Vector2(-14, -2)
+energy = 0.0
+texture = ExtResource("4_dgrxw")
+
+[node name="TorchParticles" type="GPUParticles2D" parent="Sprites/Torch"]
+position = Vector2(-1, -1)
+emitting = false
+amount = 4
+process_material = SubResource("ParticleProcessMaterial_uliw6")
+lifetime = 0.1
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprites/Torch"]
+visible = false
+position = Vector2(-1, 1)
+rotation = 1.5708
+texture = SubResource("GradientTexture1D_potx0")
+
+[node name="TorchAnimationPlayer" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_flln0")
+}
+
+[node name="MoveAnimationPlayer" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_j3qbd")
+}

@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://6gkgac7k7fda"]
+
+[ext_resource type="PackedScene" uid="uid://bise3w6g1boi0" path="res://game/wanderers/wanderer.tscn" id="1_j3v5s"]
+[ext_resource type="Resource" uid="uid://nfpex7bvo1oe" path="res://game/wanderers/scorpion/scorpion_interaction.tres" id="2_0hwvr"]
+[ext_resource type="Texture2D" uid="uid://dwad7ia27exow" path="res://game/wanderers/scorpion/scorpion.ase" id="2_6k5i7"]
+
+[node name="Scorpion" instance=ExtResource("1_j3v5s")]
+interaction = ExtResource("2_0hwvr")
+remove_on_interaction = true
+pursues_player = true
+
+[node name="Scorpion" type="Sprite2D" parent="Sprites" index="0"]
+texture = ExtResource("2_6k5i7")

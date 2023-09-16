@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://cg6cfg0oph6em"
+path="res://.godot/imported/line_icons.ase-dea519b8fd245b366fc43f31b442bd02.res"
+
+[deps]
+
+source_file="res://game/ui/movement/line_icons.ase"
+dest_files=["res://.godot/imported/line_icons.ase-dea519b8fd245b366fc43f31b442bd02.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=false

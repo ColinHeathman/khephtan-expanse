@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://4dwhnisbqpyv"
+path="res://.godot/imported/tower.aseprite-0c539c674cddd0dd511f4902be9dc9a7.res"
+
+[deps]
+
+source_file="res://game/places/tower/tower.aseprite"
+dest_files=["res://.godot/imported/tower.aseprite-0c539c674cddd0dd511f4902be9dc9a7.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=true

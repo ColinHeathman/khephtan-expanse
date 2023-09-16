@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpc5q7nb7wadx"]
+
+[ext_resource type="AudioStream" uid="uid://dg4upuj10sk22" path="res://game/sounds/Azure_Sands.mp3" id="1_tqadi"]
+
+[node name="MusicPlayer" type="Node"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_tqadi")
+volume_db = -7.0
+bus = &"Music"

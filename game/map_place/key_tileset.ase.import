@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://b65qv7yjx72go"
+path="res://.godot/imported/key_tileset.ase-391d4126d047393f98947328c7c52c3e.res"
+
+[deps]
+
+source_file="res://game/map_place/key_tileset.ase"
+dest_files=["res://.godot/imported/key_tileset.ase-391d4126d047393f98947328c7c52c3e.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=false

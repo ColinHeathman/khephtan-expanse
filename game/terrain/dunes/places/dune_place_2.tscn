@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvwcd0mrpu84k"]
+
+[ext_resource type="PackedScene" uid="uid://dbp0vyev2mxkk" path="res://game/map_place/map_place.tscn" id="1_ocabu"]
+[ext_resource type="PackedScene" uid="uid://caihi317m3gcj" path="res://game/terrain/dunes/sprites/dune_2.tscn" id="2_g3whg"]
+
+[node name="DunePlace2" instance=ExtResource("1_ocabu")]
+
+[node name="KeyMap" parent="." index="0"]
+layer_0/tile_data = PackedInt32Array(-2, 65536, 0, -1, 65536, 0, -65536, 65536, 0)
+
+[node name="Dune2" parent="." index="1" instance=ExtResource("2_g3whg")]
+position = Vector2(0, -12)

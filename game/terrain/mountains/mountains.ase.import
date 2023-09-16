@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://chab2y8kfdun"
+path="res://.godot/imported/mountains.ase-1a0e09fcecec1976cc5acb9742fcffce.res"
+
+[deps]
+
+source_file="res://game/terrain/mountains/mountains.ase"
+dest_files=["res://.godot/imported/mountains.ase-1a0e09fcecec1976cc5acb9742fcffce.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=true

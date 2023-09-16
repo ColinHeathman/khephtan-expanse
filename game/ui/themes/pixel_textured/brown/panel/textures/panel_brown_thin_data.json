@@ -1,0 +1,27 @@
+{ "frames": {
+   "panel_brown_thin.ase": {
+    "frame": { "x": 0, "y": 0, "w": 113, "h": 112 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 113, "h": 112 },
+    "sourceSize": { "w": 113, "h": 112 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.3-beta21-x64",
+  "image": "panel_brown_thin_spritesheet.png",
+  "format": "RGBA8888",
+  "size": { "w": 113, "h": 112 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "Layer", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+   { "name": "panel_brown_thin", "color": "#0000ffff", "keys": [{ "frame": 0, "bounds": {"x": 0, "y": 0, "w": 113, "h": 112 }, "center": {"x": 4, "y": 3, "w": 105, "h": 105 } }] }
+  ]
+ }
+}

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=3 format=3 uid="uid://b7atg725otj6w"]
+
+[ext_resource type="Resource" uid="uid://cgqeqrt58t1t6" path="res://game/dialog/something_happened_dialog.tres" id="1_k77yk"]
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_ykbe6"]
+
+[resource]
+script = ExtResource("1_ykbe6")
+outcome_label = ""
+outcome_color = 0
+message = "Something else happened"
+bonus_message = ""
+ok_message = "OK"
+ok_outcome = ExtResource("1_k77yk")
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

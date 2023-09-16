@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=4 format=3 uid="uid://cs56il0n4ss16"]
+
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_5em8s"]
+[ext_resource type="Resource" uid="uid://bvfude53qrib0" path="res://game/player/no_supplies_dialog/no_water.tres" id="2_l8idb"]
+[ext_resource type="Resource" uid="uid://25p11iguu8gv" path="res://game/player/no_supplies_dialog/found_water.tres" id="3_r3fhn"]
+
+[resource]
+script = ExtResource("1_5em8s")
+outcome_label = ""
+outcome_color = 0
+message = "You have no food or water.
+Your body is feeling the effects."
+bonus_message = ""
+ok_message = ""
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 25
+wisdom_message = "Try to find water"
+wisdom_pass = ExtResource("3_r3fhn")
+wisdom_fail = ExtResource("2_l8idb")
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

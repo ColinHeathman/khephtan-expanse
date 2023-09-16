@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=4 format=3 uid="uid://chgwwbqyrlt84"]
+
+[ext_resource type="Script" path="res://game/places/tower/outcome_action_tower.gd" id="1_csmlv"]
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_fsjey"]
+
+[sub_resource type="Resource" id="Resource_hobv2"]
+script = ExtResource("1_csmlv")
+day_radius = 16
+night_radius = 12
+
+[resource]
+script = ExtResource("1_fsjey")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "As you begin to make your way into the desert, you
+encounter a large stone tower. The door opens and
+after a short climb to the top your met with a stunning
+view of the desert.
+
+You can see a lot farther than normal."
+bonus_message = ""
+ok_message = "OK"
+ok_outcome = SubResource("Resource_hobv2")
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

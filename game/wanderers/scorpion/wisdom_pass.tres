@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=2 format=3 uid="uid://l3hwwcv2s7y6"]
+
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_wx7du"]
+
+[resource]
+script = ExtResource("1_wx7du")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You stay perfectly still. The scorpion gets confused and
+can't find you. Eventually it leaves."
+bonus_message = ""
+ok_message = "OK"
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

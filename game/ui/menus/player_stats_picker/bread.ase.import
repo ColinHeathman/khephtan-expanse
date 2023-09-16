@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://mfyupei7af10"
+path="res://.godot/imported/bread.ase-7dbde0cb6ff1e3664776df485d4bcbb2.res"
+
+[deps]
+
+source_file="res://game/ui/menus/player_stats_picker/bread.ase"
+dest_files=["res://.godot/imported/bread.ase-7dbde0cb6ff1e3664776df485d4bcbb2.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=false

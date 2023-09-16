@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://ckp64h60a3y46"
+path="res://.godot/imported/bandit.ase-4bdd91b6b82c6fa69cc71d82678b0b31.res"
+
+[deps]
+
+source_file="res://game/wanderers/bandit/bandit.ase"
+dest_files=["res://.godot/imported/bandit.ase-4bdd91b6b82c6fa69cc71d82678b0b31.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=false

@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://cma7jfovkg4q7"]
+
+[ext_resource type="PackedScene" uid="uid://bise3w6g1boi0" path="res://game/wanderers/wanderer.tscn" id="1_7dal8"]
+[ext_resource type="Resource" uid="uid://ydk7w36wxq71" path="res://game/wanderers/bandit/bandit_interaction.tres" id="2_afny3"]
+[ext_resource type="Texture2D" uid="uid://ckp64h60a3y46" path="res://game/wanderers/bandit/bandit.ase" id="2_cm5yf"]
+
+[node name="Bandit" instance=ExtResource("1_7dal8")]
+interaction = ExtResource("2_afny3")
+remove_on_interaction = true
+pursues_player = true
+
+[node name="Man" type="Sprite2D" parent="Sprites" index="0"]
+position = Vector2(0, 1)
+texture = ExtResource("2_cm5yf")

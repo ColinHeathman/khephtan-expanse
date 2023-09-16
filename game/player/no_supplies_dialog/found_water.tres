@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=2 format=3 uid="uid://25p11iguu8gv"]
+
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_tom4d"]
+
+[resource]
+script = ExtResource("1_tom4d")
+outcome_label = ""
+outcome_color = 0
+message = "You start to dig a hole in the ground,
+And by some miracle, you manage to
+find some wet sand. You're able to
+squeeze a few drops into your mouth."
+bonus_message = ""
+ok_message = "OK"
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

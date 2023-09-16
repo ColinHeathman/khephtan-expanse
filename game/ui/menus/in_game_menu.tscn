@@ -1,0 +1,279 @@
+[gd_scene load_steps=4 format=3 uid="uid://eumfcqpi2e2i"]
+
+[ext_resource type="Script" path="res://game/ui/menus/in_game_menu.gd" id="1_m6ktg"]
+[ext_resource type="AudioStream" uid="uid://m6bfa57mwfr" path="res://game/sounds/Select.ogg" id="2_ckmk1"]
+[ext_resource type="Theme" uid="uid://shw4guvfs7oy" path="res://game/ui/themes/pixel_textured/brown/theme.tres" id="3_iju6d"]
+
+[node name="InGameMenu" type="CanvasLayer"]
+layer = 110
+visible = false
+script = ExtResource("1_m6ktg")
+
+[node name="ReferenceTick" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("2_ckmk1")
+bus = &"FX"
+
+[node name="Debouncer" type="Timer" parent="ReferenceTick"]
+wait_time = 0.25
+one_shot = true
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_iju6d")
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Panel" type="PanelContainer" parent="CenterContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="DefaultView" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer"]
+layout_mode = 2
+
+[node name="TitleMargin" type="MarginContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/TitleMargin"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+text = "Across the Infinite Sands"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(225, 30)
+layout_mode = 2
+
+[node name="MusicLabel" type="Label" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer"]
+layout_mode = 2
+text = "Music
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer4" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MusicSlider" type="HSlider" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer4"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+value = 50.0
+
+[node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(225, 30)
+layout_mode = 2
+
+[node name="FXLabel" type="Label" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer2"]
+layout_mode = 2
+text = "Sound FX
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer5" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="FXSlider" type="HSlider" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer5"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+value = 50.0
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Credits" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+
+[node name="CreditsButton" type="Button" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/Credits"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 25)
+layout_mode = 2
+text = "Credits"
+
+[node name="Controls" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+
+[node name="ControlsButton" type="Button" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/Controls"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 25)
+layout_mode = 2
+text = "Controls"
+
+[node name="StartButton" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/StartButton"]
+layout_mode = 2
+
+[node name="StartButton" type="Button" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/StartButton/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 25)
+layout_mode = 2
+text = "Start"
+
+[node name="RestartButton" type="Button" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/StartButton/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 25)
+layout_mode = 2
+text = "Restart
+"
+
+[node name="ControlsView" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/MarginContainer/Panel/ControlsView"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/MarginContainer/Panel/ControlsView/MarginContainer"]
+layout_mode = 2
+
+[node name="TitleMargin" type="MarginContainer" parent="CenterContainer/MarginContainer/Panel/ControlsView/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="CenterContainer/MarginContainer/Panel/ControlsView/MarginContainer/VBoxContainer/TitleMargin"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+text = "Controls"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/ControlsView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(225, 35)
+layout_mode = 2
+
+[node name="Line1" type="Label" parent="CenterContainer/MarginContainer/Panel/ControlsView/MarginContainer/VBoxContainer/CenterContainer2"]
+layout_mode = 2
+text = "LMB to Move"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer6" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/ControlsView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(225, 35)
+layout_mode = 2
+
+[node name="Line1" type="Label" parent="CenterContainer/MarginContainer/Panel/ControlsView/MarginContainer/VBoxContainer/CenterContainer6"]
+layout_mode = 2
+text = "Scroll wheel to Zoom"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer3" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/ControlsView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(225, 35)
+layout_mode = 2
+
+[node name="Line2" type="Label" parent="CenterContainer/MarginContainer/Panel/ControlsView/MarginContainer/VBoxContainer/CenterContainer3"]
+layout_mode = 2
+text = "WASD to pan Camera"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer4" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/ControlsView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(225, 35)
+layout_mode = 2
+
+[node name="Line2" type="Label" parent="CenterContainer/MarginContainer/Panel/ControlsView/MarginContainer/VBoxContainer/CenterContainer4"]
+layout_mode = 2
+text = "Enter to end turn"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer5" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/ControlsView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(225, 35)
+layout_mode = 2
+
+[node name="Line2" type="Label" parent="CenterContainer/MarginContainer/Panel/ControlsView/MarginContainer/VBoxContainer/CenterContainer5"]
+layout_mode = 2
+text = "M to open the menu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/MarginContainer/Panel/ControlsView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/ControlsView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/MarginContainer/Panel/ControlsView/MarginContainer/VBoxContainer/CenterContainer"]
+layout_mode = 2
+
+[node name="ControlsOKButton" type="Button" parent="CenterContainer/MarginContainer/Panel/ControlsView/MarginContainer/VBoxContainer/CenterContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 25)
+layout_mode = 2
+text = "OK"
+
+[node name="CreditsView" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/MarginContainer/Panel/CreditsView"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/MarginContainer/Panel/CreditsView/MarginContainer"]
+layout_mode = 2
+
+[node name="TitleMargin" type="MarginContainer" parent="CenterContainer/MarginContainer/Panel/CreditsView/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="CenterContainer/MarginContainer/Panel/CreditsView/MarginContainer/VBoxContainer/TitleMargin"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+text = "Credits"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/CreditsView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(225, 35)
+layout_mode = 2
+
+[node name="Programming" type="Label" parent="CenterContainer/MarginContainer/Panel/CreditsView/MarginContainer/VBoxContainer/CenterContainer"]
+layout_mode = 2
+text = "Art & Programming - Colin Heathman"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/CreditsView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(225, 35)
+layout_mode = 2
+
+[node name="Music" type="Label" parent="CenterContainer/MarginContainer/Panel/CreditsView/MarginContainer/VBoxContainer/CenterContainer2"]
+layout_mode = 2
+text = "Music - Dalton Meaden
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/MarginContainer/Panel/CreditsView/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="StartButton" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/CreditsView/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="CreditsOKButton" type="Button" parent="CenterContainer/MarginContainer/Panel/CreditsView/MarginContainer/VBoxContainer/StartButton"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 25)
+layout_mode = 2
+text = "OK"

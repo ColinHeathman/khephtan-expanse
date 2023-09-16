@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=5 format=3 uid="uid://bhdwv7q0j65du"]
+
+[ext_resource type="Texture2D" uid="uid://bdggaqg7vouny" path="res://game/ui/menus/player_stats_picker/textures/heart_icon.tres" id="1_g2s20"]
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_x6io3"]
+[ext_resource type="Script" path="res://game/dialog/outcome_damage.gd" id="2_bt5qj"]
+
+[sub_resource type="Resource" id="Resource_r15um"]
+script = ExtResource("2_bt5qj")
+damage = 3
+
+[resource]
+script = ExtResource("1_x6io3")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You try and think of a way out of the situation, 
+but it's too late, the scorpion attacks you with
+it's stinger.
+"
+bonus_message = "-3"
+bonus_icon = ExtResource("1_g2s20")
+ok_message = "OK"
+ok_outcome = SubResource("Resource_r15um")
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

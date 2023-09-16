@@ -1,0 +1,158 @@
+[gd_scene load_steps=6 format=3 uid="uid://fgd2ji8xrbma"]
+
+[ext_resource type="Script" path="res://game/ui/menus/player_stats_picker/player_stats_picker.gd" id="1_3m23h"]
+[ext_resource type="Theme" uid="uid://shw4guvfs7oy" path="res://game/ui/themes/pixel_textured/brown/theme.tres" id="2_b5785"]
+[ext_resource type="Texture2D" uid="uid://bdggaqg7vouny" path="res://game/ui/menus/player_stats_picker/textures/heart_icon.tres" id="3_cn8js"]
+[ext_resource type="Texture2D" uid="uid://bf0ards3snrlo" path="res://game/ui/menus/player_stats_picker/textures/book_icon.tres" id="4_1ycnp"]
+[ext_resource type="Texture2D" uid="uid://be4katuot2gp1" path="res://game/ui/menus/player_stats_picker/textures/speech_icon.tres" id="5_gg0oy"]
+
+[node name="PlayerStatsPicker" type="CanvasLayer"]
+layer = 110
+visible = false
+script = ExtResource("1_3m23h")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_b5785")
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Panel" type="PanelContainer" parent="CenterContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="DefaultView" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer"]
+layout_mode = 2
+
+[node name="TitleMargin" type="MarginContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/TitleMargin"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+text = "Choose your attributes"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(225, 30)
+layout_mode = 2
+
+[node name="ExtraPointLabel" type="Label" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "+5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer4" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(225, 30)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer4"]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer4"]
+layout_mode = 2
+columns = 4
+
+[node name="ConstitutionIcon" type="TextureRect" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer4/GridContainer"]
+layout_mode = 2
+texture = ExtResource("3_cn8js")
+expand_mode = 2
+stretch_mode = 3
+
+[node name="ConstitutionLabel" type="Label" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer4/GridContainer"]
+layout_mode = 2
+text = "Constitution"
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer4/GridContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 60
+
+[node name="ConstitutionSpinBox" type="SpinBox" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer4/GridContainer"]
+unique_name_in_owner = true
+layout_direction = 2
+layout_mode = 2
+min_value = 1.0
+max_value = 10.0
+value = 5.0
+rounded = true
+alignment = 1
+
+[node name="WisdomIcon" type="TextureRect" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer4/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_1ycnp")
+expand_mode = 2
+stretch_mode = 3
+
+[node name="WisdomLabel" type="Label" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer4/GridContainer"]
+layout_mode = 2
+text = "Wisdom
+"
+vertical_alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer4/GridContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 60
+
+[node name="WisdomSpinBox" type="SpinBox" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer4/GridContainer"]
+unique_name_in_owner = true
+layout_direction = 2
+layout_mode = 2
+min_value = 1.0
+max_value = 10.0
+value = 5.0
+rounded = true
+alignment = 1
+
+[node name="DiplomacyIcon" type="TextureRect" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer4/GridContainer"]
+layout_mode = 2
+texture = ExtResource("5_gg0oy")
+expand_mode = 2
+stretch_mode = 3
+
+[node name="DiplomacyLabel" type="Label" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer4/GridContainer"]
+layout_mode = 2
+text = "Diplomacy"
+vertical_alignment = 1
+
+[node name="MarginContainer3" type="MarginContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer4/GridContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 60
+
+[node name="DiplomacySpinBox" type="SpinBox" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer4/GridContainer"]
+unique_name_in_owner = true
+layout_direction = 2
+layout_mode = 2
+min_value = 1.0
+max_value = 10.0
+value = 5.0
+rounded = true
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="OK" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+
+[node name="OKButton" type="Button" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/OK"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 25)
+layout_mode = 2
+text = "OK"

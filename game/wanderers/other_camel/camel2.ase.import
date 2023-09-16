@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://hjxkbpj0lhf2"
+path="res://.godot/imported/camel2.ase-b27937ae0dce717a696b607283ac908f.res"
+
+[deps]
+
+source_file="res://game/wanderers/other_camel/camel2.ase"
+dest_files=["res://.godot/imported/camel2.ase-b27937ae0dce717a696b607283ac908f.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=false

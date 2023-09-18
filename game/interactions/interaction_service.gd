@@ -21,6 +21,7 @@ func _input(event: InputEvent) -> void:
 
 func on_player_move(map_coord: Vector2i) -> void:
 	if map_coord in _interactions:
+		$/root/MovementUI._stop_move()
 		do_interaction(_interactions[map_coord])
 
 	for map_entity in get_tree().get_nodes_in_group("MapEntities"):
@@ -31,7 +32,11 @@ func on_player_move(map_coord: Vector2i) -> void:
 				$/root/MovementUI._stop_move()
 
 func do_interaction(place: MapPlace) -> void:
-	if !place.visited and place.dialog_deck != null:
+	if place.is_pyramid and $/root/ArtifactsService.has_scarab_key:
+		place.visited = true
+		$/root/DialogMenu.show_dialog(place.win_dialog)
+	elif !place.visited and place.dialog_deck != null:
+		place.visited = true
 		$/root/DialogMenu.show_dialog(place.dialog_deck.get_next_dialog())
 	elif place.visited_dialog != null:
 		$/root/DialogMenu.show_dialog(place.visited_dialog)

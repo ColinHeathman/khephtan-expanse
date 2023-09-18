@@ -32,7 +32,7 @@ func show_dialog(dialog: Dialog) -> void:
 	%MessageLabel.custom_minimum_size = Vector2(dialog.override_minimum_width, 0.0)
 	_update_outcome_message(dialog)
 	_update_bonus_message(dialog)
-	_update_button(dialog.ok_message, %OKButton, null)
+	_update_button(dialog.ok_message, %OKButton, %OKButtonLabel)
 	_update_button(dialog.hit_points_message, %ConstitutionCheckButton, %ConstitutionCheckButtonLabel)
 	_update_button(dialog.wisdom_message, %WisdomCheckButton, %WisdomCheckButtonLabel)
 	_update_button(dialog.diplomacy_message, %DiplomacyCheckButton, %DiplomacyCheckButtonLabel)
@@ -77,7 +77,12 @@ func _update_button(message: String, button: Button, label: Label) -> void:
 
 func _update_constitution_cost_label(dialog: Dialog) -> void:
 	if dialog.hit_points_range.size() == 2:
-		%ConstitutionCheckButtonCostLabel.text = "%s-%s" % dialog.hit_points_range
+		var low_damage = dialog.hit_points_range[0]
+		var high_damage = dialog.hit_points_range[1]
+		if $/root/ArtifactsService.has_scimitar:
+			low_damage -= 1
+			high_damage -= 1
+		%ConstitutionCheckButtonCostLabel.text = "%s-%s" % [low_damage, high_damage]
 		%ConstitutionCheckButtonCostLabel.add_theme_color_override(
 			"font_color",
 			Dialog.get_outcome_color(Dialog.OutcomeColor.RED),
@@ -124,6 +129,8 @@ func _constitution_check() -> void:
 	var low_damage = _current_dialog.hit_points_range[0]
 	var high_damage = _current_dialog.hit_points_range[1]
 	var damage = _rng.randi_range(low_damage, high_damage)
+	if $/root/ArtifactsService.has_scimitar:
+		damage -= 1
 	if _current_dialog.hit_points_outcome is Dialog:
 		var new_dialog = _current_dialog.hit_points_outcome.duplicate()
 		if new_dialog.bonus_icon == null:
@@ -188,7 +195,7 @@ func _difficulty_roll(bonus: int, dc: int) -> bool:
 	if result:
 		print("PASS %d+%d >= %d" % [roll, bonus, dc])
 	else:
-		print("FAIL %d+%d >= %d" % [roll, bonus, dc])
+		print("FAIL %d+%d < %d" % [roll, bonus, dc])
 	return result
 
 func _difficulty_probability(bonus: int, dc: int) -> float:

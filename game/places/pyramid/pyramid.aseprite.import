@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://c6k0yxeyh1abt"
+path="res://.godot/imported/pyramid.aseprite-24c7a847c3daaac63add09f375027f57.res"
+
+[deps]
+
+source_file="res://game/places/pyramid/pyramid.aseprite"
+dest_files=["res://.godot/imported/pyramid.aseprite-24c7a847c3daaac63add09f375027f57.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=true

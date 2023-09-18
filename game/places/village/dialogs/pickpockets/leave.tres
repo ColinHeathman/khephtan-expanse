@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=5 format=3 uid="uid://b6qsi3dxr7pom"]
+
+[ext_resource type="Texture2D" uid="uid://dt0pmy3dudfoo" path="res://game/ui/menus/player_stats_picker/textures/coin_icon.tres" id="1_8l74o"]
+[ext_resource type="Script" path="res://game/dialog/outcome_currency.gd" id="2_6i238"]
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="3_gihg4"]
+
+[sub_resource type="Resource" id="Resource_k4irk"]
+script = ExtResource("2_6i238")
+cost = 3
+
+[resource]
+script = ExtResource("3_gihg4")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You don't trust the kid, so you ignore him.
+
+A few minutes later, you notice some coins are missing
+from your pockets."
+bonus_message = "-3"
+bonus_icon = ExtResource("1_8l74o")
+ok_message = "OK"
+ok_outcome = SubResource("Resource_k4irk")
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=3 format=3 uid="uid://cdxrchwkkqq0r"]
+
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_qavme"]
+[ext_resource type="Resource" uid="uid://bdrvpu0oo21ob" path="res://game/places/cave/dialog/look_around.tres" id="1_ulo4y"]
+
+[resource]
+script = ExtResource("1_qavme")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "The beast turns the corner, and reveals itself to be some
+kind of wild cat. You attack, and manage to overpower
+it."
+bonus_message = ""
+ok_message = "Look around"
+ok_outcome = ExtResource("1_ulo4y")
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

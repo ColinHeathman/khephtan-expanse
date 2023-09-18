@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://dc7x70l8w8hsa"
+path="res://.godot/imported/camp.ase-673e352385c40fc0051b9ea84d8b9e41.res"
+
+[deps]
+
+source_file="res://game/places/camp/camp.ase"
+dest_files=["res://.godot/imported/camp.ase-673e352385c40fc0051b9ea84d8b9e41.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=true

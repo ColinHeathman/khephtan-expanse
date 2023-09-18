@@ -33,12 +33,13 @@ func _import(source_file, save_path, options, r_platform_variants, r_gen_files):
 	# Unmarshal result
 	var spritesheet_path = aseprite_result.spritesheet_path
 	var spritesheet_data = aseprite_result.data
-	_editor.get_resource_filesystem().scan_sources()
+	# self.append_import_external_resource(spritesheet_path) <- this should fix the double import problem but it doesn't work
 	var spritesheet_tex: Texture2D = ResourceLoader.load(spritesheet_path, "Texture2D", ResourceLoader.CACHE_MODE_REPLACE)
 	if spritesheet_tex == null:
-		print("Failed to load texture")
+		print("Failed to load texture, retrying...")
+		_editor.get_resource_filesystem().scan() # <- this will trigger a second import, which should work
 		return ERR_SCRIPT_FAILED
-
+		
 	# Get Array[AtlasTexture]
 	var atlas_textures = AsepriteSpriteFrameTools.make_atlas_textures(spritesheet_tex, spritesheet_data)
 	# Add each to SpriteFrames

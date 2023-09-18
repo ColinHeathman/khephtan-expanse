@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=6 format=3 uid="uid://b7ww58srlf6ow"]
+
+[ext_resource type="Texture2D" uid="uid://bdggaqg7vouny" path="res://game/ui/menus/player_stats_picker/textures/heart_icon.tres" id="1_8webw"]
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_atn8i"]
+[ext_resource type="Resource" uid="uid://bdrvpu0oo21ob" path="res://game/places/cave/dialog/look_around.tres" id="2_3u6ie"]
+[ext_resource type="Script" path="res://game/dialog/outcome_damage.gd" id="3_5eyuk"]
+
+[sub_resource type="Resource" id="Resource_td4is"]
+script = ExtResource("3_5eyuk")
+damage = 2
+next_outcome = ExtResource("2_3u6ie")
+
+[resource]
+script = ExtResource("1_atn8i")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "The beast turns the corner, and reveals itself to be some
+kind of wild cat. It attacks, but you manage to overpower
+it."
+bonus_message = "-3"
+bonus_icon = ExtResource("1_8webw")
+ok_message = "Look around"
+ok_outcome = SubResource("Resource_td4is")
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

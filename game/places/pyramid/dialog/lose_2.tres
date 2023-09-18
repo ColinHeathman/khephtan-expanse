@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=2 format=3 uid="uid://cihhyfv0k8ig"]
+
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="2_j10d8"]
+
+[resource]
+script = ExtResource("2_j10d8")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You arrive at the top of the pyramid. There is a hole in
+one of the bricks.
+
+It looks to be shaped like a scarab..."
+bonus_message = ""
+ok_message = "Am I missing something?"
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

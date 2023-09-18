@@ -57,6 +57,7 @@ func reveal_around_point(map_coord: Vector2i, radius: int):
 	for coord in inner_ring:
 		%BlackTileMap.erase_cell(FOG_LAYER, coord)
 		%FogTileMap.erase_cell(FOG_LAYER, coord)
+		
 
 	# Reveal through fog
 	%FogTileMap.set_cells_terrain_connect(FOG_LAYER, outer_ring, FOG_TERRAIN_SET, FOG_TERRAIN)

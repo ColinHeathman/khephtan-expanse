@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=3 format=3 uid="uid://byjqhdsvybu7t"]
+
+[ext_resource type="Resource" uid="uid://bdrvpu0oo21ob" path="res://game/places/cave/dialog/look_around.tres" id="1_fs7om"]
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_hyd4q"]
+
+[resource]
+script = ExtResource("1_hyd4q")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You slowly sneak in. You can hear some kind of beast 
+asleep inside."
+bonus_message = ""
+ok_message = "Look around"
+ok_outcome = ExtResource("1_fs7om")
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

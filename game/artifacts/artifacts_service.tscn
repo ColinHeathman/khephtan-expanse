@@ -1,0 +1,218 @@
+[gd_scene load_steps=14 format=3 uid="uid://uiwrf13ddw8q"]
+
+[ext_resource type="Script" path="res://game/artifacts/artifacts_service.gd" id="1_2kj70"]
+[ext_resource type="Theme" uid="uid://shw4guvfs7oy" path="res://game/ui/themes/pixel_textured/brown/theme.tres" id="1_st6lu"]
+[ext_resource type="Texture2D" uid="uid://dt21rewr1b3e1" path="res://game/artifacts/textures/civic_crown.tres" id="2_1o551"]
+[ext_resource type="StyleBox" uid="uid://pqve72tvtoil" path="res://game/ui/themes/pixel_textured/brown/button/textures/button_normal_stylebox.tres" id="2_uhaaw"]
+[ext_resource type="PackedScene" uid="uid://k3hmvtevn2lw" path="res://game/artifacts/artifacts_tooltip.tscn" id="5_5lkj4"]
+[ext_resource type="Texture2D" uid="uid://bf0ards3snrlo" path="res://game/ui/menus/player_stats_picker/textures/book_icon.tres" id="6_2g6l4"]
+[ext_resource type="Texture2D" uid="uid://be4katuot2gp1" path="res://game/ui/menus/player_stats_picker/textures/speech_icon.tres" id="6_u57bx"]
+[ext_resource type="Texture2D" uid="uid://l43kxm82x4nc" path="res://game/artifacts/textures/Scimitar.tres" id="7_je1sf"]
+[ext_resource type="Texture2D" uid="uid://bdggaqg7vouny" path="res://game/ui/menus/player_stats_picker/textures/heart_icon.tres" id="8_2pqht"]
+[ext_resource type="Texture2D" uid="uid://b5c5eu53d6rpl" path="res://game/artifacts/textures/lantern.tres" id="8_xbnrv"]
+[ext_resource type="Texture2D" uid="uid://tecuqwovc0fq" path="res://game/artifacts/textures/spyglass.tres" id="9_y0dw0"]
+[ext_resource type="Texture2D" uid="uid://1cww2bsa6pqx" path="res://game/artifacts/textures/scepter.tres" id="10_thn8m"]
+[ext_resource type="Texture2D" uid="uid://3hfqbvyit6ph" path="res://game/artifacts/textures/scarab_key.tres" id="11_ns2fr"]
+
+[node name="ArtifactsService" type="CanvasLayer"]
+layer = 100
+visible = false
+script = ExtResource("1_2kj70")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -141.0
+offset_bottom = 138.0
+grow_horizontal = 0
+theme = ExtResource("1_st6lu")
+theme_override_constants/margin_right = 256
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="CivicCrownPanel" type="PanelContainer" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_uhaaw")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/CivicCrownPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="CivicCrownRect" type="TextureRect" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/CivicCrownPanel/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("2_1o551")
+
+[node name="CivicCrownTooltip" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/CivicCrownPanel" instance=ExtResource("5_5lkj4")]
+unique_name_in_owner = true
+visible = false
+
+[node name="Title" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/CivicCrownPanel/CivicCrownTooltip/PanelContainer/MarginContainer/VBoxContainer" index="0"]
+text = "Civic Crown"
+
+[node name="IconRect" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/CivicCrownPanel/CivicCrownTooltip/PanelContainer/MarginContainer/VBoxContainer/CenterContainer/HBoxContainer" index="0"]
+texture = ExtResource("6_u57bx")
+
+[node name="IconLabel" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/CivicCrownPanel/CivicCrownTooltip/PanelContainer/MarginContainer/VBoxContainer/CenterContainer/HBoxContainer" index="1"]
+text = "+2 diplomacy"
+
+[node name="ScimitarPanel" type="PanelContainer" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_uhaaw")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScimitarPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="ScimitarRect" type="TextureRect" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScimitarPanel/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("7_je1sf")
+
+[node name="ScimitarTooltip" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScimitarPanel" instance=ExtResource("5_5lkj4")]
+unique_name_in_owner = true
+visible = false
+
+[node name="Title" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScimitarPanel/ScimitarTooltip/PanelContainer/MarginContainer/VBoxContainer" index="0"]
+text = "Scimitar"
+
+[node name="IconRect" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScimitarPanel/ScimitarTooltip/PanelContainer/MarginContainer/VBoxContainer/CenterContainer/HBoxContainer" index="0"]
+texture = ExtResource("8_2pqht")
+
+[node name="IconLabel" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScimitarPanel/ScimitarTooltip/PanelContainer/MarginContainer/VBoxContainer/CenterContainer/HBoxContainer" index="1"]
+text = "+1 protection"
+
+[node name="LanternPanel" type="PanelContainer" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_uhaaw")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/LanternPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="LanternRect" type="TextureRect" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/LanternPanel/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("8_xbnrv")
+
+[node name="LanternTooltip" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/LanternPanel" instance=ExtResource("5_5lkj4")]
+unique_name_in_owner = true
+visible = false
+
+[node name="Title" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/LanternPanel/LanternTooltip/PanelContainer/MarginContainer/VBoxContainer" index="0"]
+text = "Lantern"
+
+[node name="IconLabel" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/LanternPanel/LanternTooltip/PanelContainer/MarginContainer/VBoxContainer/CenterContainer/HBoxContainer" index="1"]
+text = "+1 nightime sight range"
+
+[node name="SpyglassPanel" type="PanelContainer" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_uhaaw")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/SpyglassPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="SpyglassRect" type="TextureRect" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/SpyglassPanel/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("9_y0dw0")
+
+[node name="SpyglassTooltip" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/SpyglassPanel" instance=ExtResource("5_5lkj4")]
+unique_name_in_owner = true
+visible = false
+
+[node name="Title" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/SpyglassPanel/SpyglassTooltip/PanelContainer/MarginContainer/VBoxContainer" index="0"]
+text = "Spyglass"
+
+[node name="IconLabel" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/SpyglassPanel/SpyglassTooltip/PanelContainer/MarginContainer/VBoxContainer/CenterContainer/HBoxContainer" index="1"]
+text = "+2 sight range"
+
+[node name="ScepterPanel" type="PanelContainer" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_uhaaw")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScepterPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="ScepterRect" type="TextureRect" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScepterPanel/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("10_thn8m")
+
+[node name="ScepterTooltip" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScepterPanel" instance=ExtResource("5_5lkj4")]
+unique_name_in_owner = true
+visible = false
+
+[node name="Title" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScepterPanel/ScepterTooltip/PanelContainer/MarginContainer/VBoxContainer" index="0"]
+text = "Ankh Scepter"
+
+[node name="IconRect" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScepterPanel/ScepterTooltip/PanelContainer/MarginContainer/VBoxContainer/CenterContainer/HBoxContainer" index="0"]
+texture = ExtResource("6_2g6l4")
+
+[node name="IconLabel" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScepterPanel/ScepterTooltip/PanelContainer/MarginContainer/VBoxContainer/CenterContainer/HBoxContainer" index="1"]
+text = "+2 wisdom"
+
+[node name="ScarabKeyPanel" type="PanelContainer" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_uhaaw")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScarabKeyPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="ScarabKeyRect" type="TextureRect" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScarabKeyPanel/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("11_ns2fr")
+
+[node name="ScarabKeyTooltip" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScarabKeyPanel" instance=ExtResource("5_5lkj4")]
+unique_name_in_owner = true
+visible = false
+
+[node name="Title" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScarabKeyPanel/ScarabKeyTooltip/PanelContainer/MarginContainer/VBoxContainer" index="0"]
+text = "Golden Scarab"
+
+[node name="IconLabel" parent="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScarabKeyPanel/ScarabKeyTooltip/PanelContainer/MarginContainer/VBoxContainer/CenterContainer/HBoxContainer" index="1"]
+text = "? ? ?"
+
+[editable path="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/CivicCrownPanel/CivicCrownTooltip"]
+[editable path="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScimitarPanel/ScimitarTooltip"]
+[editable path="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/LanternPanel/LanternTooltip"]
+[editable path="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/SpyglassPanel/SpyglassTooltip"]
+[editable path="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScepterPanel/ScepterTooltip"]
+[editable path="MarginContainer/PanelContainer/MarginContainer/HBoxContainer/ScarabKeyPanel/ScarabKeyTooltip"]

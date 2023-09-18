@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://cyaq3h5ok0pbf"
+path="res://.godot/imported/cave.ase-243c28b68b53c59c02d53c834b56cb11.res"
+
+[deps]
+
+source_file="res://game/places/cave/cave.ase"
+dest_files=["res://.godot/imported/cave.ase-243c28b68b53c59c02d53c834b56cb11.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=true

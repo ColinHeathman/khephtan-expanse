@@ -6,6 +6,10 @@
 unique_name_in_owner = true
 enabled = false
 zoom = Vector2(2, 2)
+limit_left = -1024
+limit_top = -6000
+limit_right = 8192
+limit_bottom = 1500
 limit_smoothed = true
 position_smoothing_enabled = true
 script = ExtResource("1_mydm8")

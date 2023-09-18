@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=4 format=3 uid="uid://i0ngoxgoropr"]
+
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_hnfud"]
+[ext_resource type="Resource" uid="uid://dfdgeoj1a88s3" path="res://game/places/ruins/dialog/wisdom_fail.tres" id="2_hy7q3"]
+[ext_resource type="Resource" uid="uid://cyqhmsy5my77l" path="res://game/places/ruins/dialog/wisdom_pass.tres" id="3_leeji"]
+
+[resource]
+script = ExtResource("1_hnfud")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You find some ancient ruins.."
+bonus_message = ""
+ok_message = ""
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 15
+wisdom_message = "Search"
+wisdom_pass = ExtResource("3_leeji")
+wisdom_fail = ExtResource("2_hy7q3")
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

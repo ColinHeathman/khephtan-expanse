@@ -26,5 +26,5 @@ diplomacy_message = "Try and talk to the bandit"
 diplomacy_pass = ExtResource("3_7o2ki")
 diplomacy_fail = ExtResource("2_g5hpj")
 currency_cost = 5
-currency_message = "Pay him off"
+currency_message = "Pay them off"
 currency_outcome = ExtResource("1_jkmy3")

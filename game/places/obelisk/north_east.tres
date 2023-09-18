@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=2 format=3 uid="uid://86u3hxxyxrwr"]
+
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_p6puc"]
+
+[resource]
+script = ExtResource("1_p6puc")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You manage to decifer the ancient inscription:
+
+\"What you seek is North East\""
+bonus_message = ""
+ok_message = "OK"
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

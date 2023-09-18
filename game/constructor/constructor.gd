@@ -89,7 +89,7 @@ func _setup_menus() -> void:
 
 func _setup_fog() -> void:
 	$/root/FogOfWar._player = $/root/Main/Player
-	$/root/FogOfWar.reset(Rect2i(-100, -100, 300, 300))
+	$/root/FogOfWar.reset(Rect2i(-100, -300, 300, 600))
 	$/root/Main/Player.moved.connect($/root/FogOfWar.on_player_move.unbind(1))
 	$/root/TurnController.new_turn.connect($/root/FogOfWar.on_player_move.unbind(1))
 	$/root/FogOfWar.call_deferred("on_player_move")

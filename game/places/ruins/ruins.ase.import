@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://brhd4krsud4co"
+path="res://.godot/imported/ruins.ase-35bd7f3989eb989a61a13f707cf1a9ff.res"
+
+[deps]
+
+source_file="res://game/places/ruins/ruins.ase"
+dest_files=["res://.godot/imported/ruins.ase-35bd7f3989eb989a61a13f707cf1a9ff.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=true

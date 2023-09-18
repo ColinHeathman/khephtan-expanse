@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://heyiskt6rfi5"]
+
+[ext_resource type="Texture2D" uid="uid://k1pl7pe8pkd" path="res://game/places/camp/textures/camp_spritesheet.png" id="1_gm6le"]
+
+[resource]
+atlas = ExtResource("1_gm6le")
+region = Rect2(0, 0, 77, 36)

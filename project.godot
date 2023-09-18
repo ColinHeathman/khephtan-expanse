@@ -38,6 +38,7 @@ Hud="*res://game/ui/menus/hud/hud.tscn"
 MusicPlayer="*res://game/music_player.tscn"
 DialogMenu="*res://game/dialog/dialog_menu.tscn"
 PlayerStatsPicker="*res://game/ui/menus/player_stats_picker/player_stats_picker.tscn"
+ArtifactsService="*res://game/artifacts/artifacts_service.tscn"
 Constructor="*res://game/constructor/constructor.gd"
 SceneLoader="*res://game/constructor/scene_loader.gd"
 
@@ -68,7 +69,6 @@ show_menu={
 "deadzone": 0.5,
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"echo":false,"script":null)
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194341,"key_label":0,"unicode":0,"echo":false,"script":null)
-, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":77,"key_label":0,"unicode":109,"echo":false,"script":null)
 ]
 }
 debug_camera_left={

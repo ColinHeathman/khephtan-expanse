@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://ca5j5satrcqod"]
+
+[ext_resource type="Texture2D" uid="uid://cwc2bjujn04l5" path="res://game/places/ruins/textures/ruins_spritesheet.png" id="1_hkvvs"]
+
+[resource]
+atlas = ExtResource("1_hkvvs")
+region = Rect2(5, 123, 90, 78)

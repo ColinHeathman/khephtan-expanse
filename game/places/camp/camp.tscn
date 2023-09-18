@@ -1,0 +1,73 @@
+[gd_scene load_steps=14 format=3 uid="uid://bqtsjursaleso"]
+
+[ext_resource type="PackedScene" uid="uid://dbp0vyev2mxkk" path="res://game/map_place/map_place.tscn" id="1_bcni0"]
+[ext_resource type="Texture2D" uid="uid://c051juhphnkxe" path="res://game/places/camp/textures/tents.tres" id="2_6gblr"]
+[ext_resource type="Resource" uid="uid://2boo4n85lnck" path="res://game/places/camp/dialog/camp_dialog.tres" id="2_rov1u"]
+[ext_resource type="Texture2D" uid="uid://heyiskt6rfi5" path="res://game/places/camp/textures/tents_shadows.tres" id="3_1jqsd"]
+[ext_resource type="Script" path="res://game/dialog/dialog_deck.gd" id="3_js3w0"]
+[ext_resource type="Resource" uid="uid://bs05lrpc5g686" path="res://game/places/camp/dialog/visited_dialog.tres" id="4_fjnmn"]
+[ext_resource type="Texture2D" uid="uid://bg053xboaaa1v" path="res://game/places/camp/textures/tent_bg.tres" id="4_y1s4f"]
+[ext_resource type="SpriteFrames" uid="uid://b6t5efq7e6kt4" path="res://game/places/camp/campfire.ase" id="5_68jfv"]
+
+[sub_resource type="Resource" id="Resource_ytml0"]
+script = ExtResource("3_js3w0")
+dialogs = Array[Resource("res://game/dialog/dialog.gd")]([ExtResource("2_rov1u")])
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_pq6av"]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_v18nx"]
+blend_mode = 1
+light_mode = 1
+
+[sub_resource type="Gradient" id="Gradient_75eqx"]
+offsets = PackedFloat32Array(0, 0.715556)
+colors = PackedColorArray(0.222656, 0.222656, 0.222656, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_3ujdm"]
+gradient = SubResource("Gradient_75eqx")
+width = 32
+height = 32
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 1)
+
+[node name="Camp" instance=ExtResource("1_bcni0")]
+dialog_deck = SubResource("Resource_ytml0")
+visited_dialog = ExtResource("4_fjnmn")
+
+[node name="KeyMap" parent="." index="0"]
+layer_0/tile_data = PackedInt32Array(-2, 65536, 0, -65537, 65536, 0, -131072, 65536, 0, -65536, 65536, 0, -1, 0, 0)
+
+[node name="Tents" type="Sprite2D" parent="." index="1"]
+position = Vector2(0, -20)
+texture = ExtResource("2_6gblr")
+
+[node name="TentsShadows" type="Sprite2D" parent="." index="2" groups=["Shadows"]]
+position = Vector2(0, -22)
+texture = ExtResource("3_1jqsd")
+
+[node name="TentBg" type="Sprite2D" parent="." index="3"]
+z_index = -1
+position = Vector2(0, -20)
+texture = ExtResource("4_y1s4f")
+
+[node name="CampfireDay" type="AnimatedSprite2D" parent="." index="4"]
+position = Vector2(0, -10)
+sprite_frames = ExtResource("5_68jfv")
+animation = &"burn-loop"
+autoplay = "burn-loop"
+frame_progress = 0.145999
+
+[node name="CampfireNight" type="AnimatedSprite2D" parent="." index="5" groups=["Lights"]]
+material = SubResource("CanvasItemMaterial_pq6av")
+position = Vector2(0, -10)
+sprite_frames = ExtResource("5_68jfv")
+animation = &"burn-loop"
+autoplay = "burn-loop"
+frame_progress = 0.145999
+
+[node name="CampfireNightLight" type="Sprite2D" parent="." index="6"]
+material = SubResource("CanvasItemMaterial_v18nx")
+position = Vector2(0, -10)
+texture = SubResource("GradientTexture2D_3ujdm")

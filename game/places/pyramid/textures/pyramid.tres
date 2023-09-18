@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://ca4203gasm170"]
+
+[ext_resource type="Texture2D" uid="uid://mw6bjvmuxyy5" path="res://game/places/pyramid/textures/pyramid_spritesheet.png" id="1_7wtx0"]
+
+[resource]
+atlas = ExtResource("1_7wtx0")
+region = Rect2(0, 171, 317, 201)

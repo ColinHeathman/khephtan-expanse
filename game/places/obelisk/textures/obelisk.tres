@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://dimdg5v0vyqu7"]
+
+[ext_resource type="Texture2D" uid="uid://y70o1wm8fufh" path="res://game/places/obelisk/textures/obelisk_spritesheet.png" id="1_0s5e0"]
+
+[resource]
+atlas = ExtResource("1_0s5e0")
+region = Rect2(54, 94, 39, 156)

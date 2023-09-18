@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://game/places/tower/outcome_action_tower.gd" id="1_csmlv"]
 [ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_fsjey"]
 
-[sub_resource type="Resource" id="Resource_hobv2"]
+[sub_resource type="Resource" id="Resource_6l6po"]
 script = ExtResource("1_csmlv")
 day_radius = 16
 night_radius = 12
@@ -21,7 +21,7 @@ view of the desert.
 You can see a lot farther than normal."
 bonus_message = ""
 ok_message = "OK"
-ok_outcome = SubResource("Resource_hobv2")
+ok_outcome = SubResource("Resource_6l6po")
 hit_points_range = Array[int]([])
 hit_points_message = ""
 wisdom_dc = 0

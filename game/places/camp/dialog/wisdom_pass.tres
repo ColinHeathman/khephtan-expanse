@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=5 format=3 uid="uid://dttoguyjvsmn0"]
+
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_40ycs"]
+[ext_resource type="Texture2D" uid="uid://tecuqwovc0fq" path="res://game/artifacts/textures/spyglass.tres" id="1_ljmvt"]
+[ext_resource type="Script" path="res://game/dialog/outcome_artifact.gd" id="2_4rpqs"]
+
+[sub_resource type="Resource" id="Resource_xy84o"]
+script = ExtResource("2_4rpqs")
+artifact = 3
+
+[resource]
+script = ExtResource("1_40ycs")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You sneak around behind the tents. You find a chest with it's latch
+left unlocked. Inside, you find a spyglass"
+bonus_message = "Spyglass"
+bonus_icon = ExtResource("1_ljmvt")
+ok_message = "OK"
+ok_outcome = SubResource("Resource_xy84o")
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

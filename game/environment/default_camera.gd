@@ -4,7 +4,7 @@ signal zoom_changed()
 signal moved()
 
 const ZOOM_INCREMENT = 0.25
-const ZOOM_MIN = 0.25
+const ZOOM_MIN = 0.50
 const ZOOM_MAX = 4
 const SPEED = 1000.0
 

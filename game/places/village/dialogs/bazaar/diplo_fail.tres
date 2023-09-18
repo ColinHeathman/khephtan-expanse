@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=3 format=3 uid="uid://b7q6b7rofa3pi"]
+
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_0yyrj"]
+[ext_resource type="Resource" uid="uid://bisfgvo8qa7is" path="res://game/places/village/dialogs/bazaar/get_lantern.tres" id="1_uuu1f"]
+
+[resource]
+script = ExtResource("1_0yyrj")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You ask him about the surrounding area.
+
+He stares back at you blankly. It seems like he can't
+understand you."
+bonus_message = ""
+ok_message = "OK"
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 2
+currency_message = "Buy the lantern he has for sale"
+currency_outcome = ExtResource("1_uuu1f")

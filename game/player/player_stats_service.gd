@@ -68,7 +68,7 @@ func _ready() -> void:
 	_hit_points = 10
 	_wisdom = 5
 	_diplomacy = 5
-	_currency = 10
+	_currency = 5
 	_supplies = 0
 	self.hit_points_changed.connect(_on_hitpoints_changed)
 	self.add_to_group("Resettable")

@@ -14,7 +14,7 @@ signal moving(bool)
 @export var visited_interaction: Dialog
 @export var remove_on_interaction: bool = false
 @export var pursues_player: bool = false
-@export var pursuit_move_points: int = 5
+@export var pursuit_move_points: int = 7
 var move_points_remaining: int
 var player_visited: bool = false
 

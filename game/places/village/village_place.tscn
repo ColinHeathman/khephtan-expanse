@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bsao3ckdawdr8"]
+[gd_scene load_steps=9 format=3 uid="uid://bsao3ckdawdr8"]
 
 [ext_resource type="PackedScene" uid="uid://dbp0vyev2mxkk" path="res://game/map_place/map_place.tscn" id="1_u6xuc"]
+[ext_resource type="Resource" uid="uid://igycmnv1ecml" path="res://game/places/village/village_dialogs.tres" id="2_7npsm"]
 [ext_resource type="Texture2D" uid="uid://l30epao5qkiv" path="res://game/places/village/textures/village_background.tres" id="2_poynf"]
+[ext_resource type="Resource" uid="uid://dbenw1hsoigsx" path="res://game/places/village/visited_dialog.tres" id="3_p27b2"]
 [ext_resource type="Texture2D" uid="uid://cf3mutcpkw20n" path="res://game/places/village/textures/village_shadows.tres" id="3_to4t3"]
 [ext_resource type="Texture2D" uid="uid://ca1ngfywvcnjf" path="res://game/places/village/textures/village.tres" id="4_i7qbu"]
 [ext_resource type="Material" uid="uid://cytusu1ydwi2h" path="res://game/places/unshaded_lights_material.tres" id="4_n0akw"]
@@ -10,6 +12,8 @@
 [node name="Village" instance=ExtResource("1_u6xuc")]
 z_index = -1
 y_sort_enabled = false
+dialog_deck = ExtResource("2_7npsm")
+visited_dialog = ExtResource("3_p27b2")
 
 [node name="VillageBackground" type="Sprite2D" parent="." index="0"]
 z_index = -2

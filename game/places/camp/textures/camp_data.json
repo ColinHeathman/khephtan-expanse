@@ -1,0 +1,34 @@
+{ "frames": {
+   "camp.ase": {
+    "frame": { "x": 0, "y": 0, "w": 77, "h": 129 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 77, "h": 129 },
+    "sourceSize": { "w": 77, "h": 129 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.3-beta21-x64",
+  "image": "camp_spritesheet.png",
+  "format": "RGBA8888",
+  "size": { "w": 77, "h": 129 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "sand", "opacity": 255, "blendMode": "normal" },
+   { "name": "shadows", "opacity": 255, "blendMode": "normal" },
+   { "name": "albedo" },
+   { "name": "crates_behind", "group": "albedo", "opacity": 255, "blendMode": "normal" },
+   { "name": "tents", "group": "albedo", "opacity": 255, "blendMode": "normal" },
+   { "name": "crates", "group": "albedo", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+   { "name": "tents", "color": "#0000ffff", "keys": [{ "frame": 0, "bounds": {"x": 0, "y": 36, "w": 77, "h": 36 } }] },
+   { "name": "tents_shadows", "color": "#0000ffff", "keys": [{ "frame": 0, "bounds": {"x": 0, "y": 0, "w": 77, "h": 36 } }] },
+   { "name": "tent_bg", "color": "#0000ffff", "keys": [{ "frame": 0, "bounds": {"x": 0, "y": 72, "w": 77, "h": 57 } }] }
+  ]
+ }
+}

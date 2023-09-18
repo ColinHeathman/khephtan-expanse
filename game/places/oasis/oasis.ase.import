@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://dy6cdt14nfa3g"
+path="res://.godot/imported/oasis.ase-1cc9fa01964c392aafea7e53be34763f.res"
+
+[deps]
+
+source_file="res://game/places/oasis/oasis.ase"
+dest_files=["res://.godot/imported/oasis.ase-1cc9fa01964c392aafea7e53be34763f.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=true

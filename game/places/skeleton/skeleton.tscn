@@ -1,0 +1,20 @@
+[gd_scene load_steps=6 format=3 uid="uid://1dnfxcsadis4"]
+
+[ext_resource type="PackedScene" uid="uid://dbp0vyev2mxkk" path="res://game/map_place/map_place.tscn" id="1_wj33q"]
+[ext_resource type="Resource" uid="uid://l2om5rjokqht" path="res://game/places/skeleton/dialog/skeleton.tres" id="2_a7s55"]
+[ext_resource type="Texture2D" uid="uid://cyl716prd36ex" path="res://game/places/skeleton/textures/skeleton_spritesheet.png" id="2_pwfpy"]
+[ext_resource type="Script" path="res://game/dialog/dialog_deck.gd" id="3_sdtrp"]
+
+[sub_resource type="Resource" id="Resource_xvhpa"]
+script = ExtResource("3_sdtrp")
+dialogs = Array[Resource("res://game/dialog/dialog.gd")]([ExtResource("2_a7s55")])
+
+[node name="Skeleton" instance=ExtResource("1_wj33q")]
+dialog_deck = SubResource("Resource_xvhpa")
+
+[node name="KeyMap" parent="." index="0"]
+layer_0/tile_data = PackedInt32Array(-1, 0, 0)
+
+[node name="Skeleton" type="Sprite2D" parent="." index="1"]
+position = Vector2(0, -10)
+texture = ExtResource("2_pwfpy")

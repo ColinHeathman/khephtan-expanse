@@ -1,0 +1,15 @@
+[remap]
+
+importer="aseprite.spriteframes"
+type="SpriteFrames"
+uid="uid://b6t5efq7e6kt4"
+path="res://.godot/imported/campfire.ase-fa059626c17952b0894dca0ade223758.tres"
+
+[deps]
+
+source_file="res://game/places/camp/campfire.ase"
+dest_files=["res://.godot/imported/campfire.ase-fa059626c17952b0894dca0ade223758.tres"]
+
+[params]
+
+aseprite_script=""

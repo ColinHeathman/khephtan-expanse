@@ -1,0 +1,39 @@
+[gd_scene load_steps=10 format=3 uid="uid://dlliqcs4vsgsu"]
+
+[ext_resource type="PackedScene" uid="uid://dbp0vyev2mxkk" path="res://game/map_place/map_place.tscn" id="1_jv143"]
+[ext_resource type="Resource" uid="uid://4agrn0s3811n" path="res://game/places/oasis/dialog/oasis.tres" id="2_ujtbl"]
+[ext_resource type="Texture2D" uid="uid://dp6vcx8g84s6j" path="res://game/places/oasis/textures/oasis.tres" id="2_ycjpb"]
+[ext_resource type="Script" path="res://game/dialog/dialog_deck.gd" id="3_5ns4d"]
+[ext_resource type="Texture2D" uid="uid://cja0yyd6fy4xi" path="res://game/places/oasis/textures/oasis_sand.tres" id="3_8bgk4"]
+[ext_resource type="Resource" uid="uid://cp5ll3tqv6mg6" path="res://game/places/oasis/dialog/visited.tres" id="4_4hpbk"]
+[ext_resource type="Texture2D" uid="uid://dlb6csqgoojeq" path="res://game/places/oasis/textures/oasis_shadows.tres" id="4_aebmo"]
+[ext_resource type="Texture2D" uid="uid://bh5gkj06d2m41" path="res://game/places/oasis/textures/oasis_trees.tres" id="5_8suwo"]
+
+[sub_resource type="Resource" id="Resource_ygy7p"]
+script = ExtResource("3_5ns4d")
+dialogs = Array[Resource("res://game/dialog/dialog.gd")]([ExtResource("2_ujtbl")])
+
+[node name="Oasis" instance=ExtResource("1_jv143")]
+dialog_deck = SubResource("Resource_ygy7p")
+visited_dialog = ExtResource("4_4hpbk")
+
+[node name="KeyMap" parent="." index="0"]
+layer_0/tile_data = PackedInt32Array(-2, 65536, 0, -1, 65536, 0, -65536, 65536, 0, 65535, 0, 0, 0, 0, 0)
+
+[node name="OasisTrees" type="Sprite2D" parent="." index="1"]
+texture = ExtResource("5_8suwo")
+
+[node name="OasisShadows" type="Sprite2D" parent="." index="2" groups=["Shadows"]]
+position = Vector2(-1, -4)
+texture = ExtResource("4_aebmo")
+offset = Vector2(0, 4)
+
+[node name="Oasis" type="Sprite2D" parent="." index="3"]
+z_index = -1
+position = Vector2(0, 5)
+texture = ExtResource("2_ycjpb")
+
+[node name="OasisSand" type="Sprite2D" parent="." index="4"]
+z_index = -1
+position = Vector2(0, 3)
+texture = ExtResource("3_8bgk4")

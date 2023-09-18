@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=2 format=3 uid="uid://by4n7ej8rnth8"]
+
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_ps4u7"]
+
+[resource]
+script = ExtResource("1_ps4u7")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "Nobody seems interested in the \"fragrant\" food that you
+brought."
+bonus_message = ""
+ok_message = "OK"
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

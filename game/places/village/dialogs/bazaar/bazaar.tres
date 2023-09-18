@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=6 format=3 uid="uid://ikygng1y7d4c"]
+
+[ext_resource type="Resource" uid="uid://bisfgvo8qa7is" path="res://game/places/village/dialogs/bazaar/get_lantern.tres" id="1_6v7sr"]
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_r7gr8"]
+[ext_resource type="Resource" uid="uid://b7q6b7rofa3pi" path="res://game/places/village/dialogs/bazaar/diplo_fail.tres" id="2_xc3y7"]
+[ext_resource type="Resource" uid="uid://hqqi6a5pold2" path="res://game/places/village/dialogs/bazaar/diplo_pass.tres" id="3_nc1oi"]
+[ext_resource type="Resource" uid="uid://vq5vfj5thaug" path="res://game/places/village/dialogs/bazaar/something_else.tres" id="4_ghoxu"]
+
+[resource]
+script = ExtResource("1_r7gr8")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You find a bustling village in the middle of the desert.
+
+There is a busy market, an old man selling knick knacks
+catches your eye."
+bonus_message = ""
+ok_message = "Look for something else."
+ok_outcome = ExtResource("4_ghoxu")
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 12
+diplomacy_message = "Ask him for information"
+diplomacy_pass = ExtResource("3_nc1oi")
+diplomacy_fail = ExtResource("2_xc3y7")
+currency_cost = 2
+currency_message = "Buy the lantern he has for sale"
+currency_outcome = ExtResource("1_6v7sr")

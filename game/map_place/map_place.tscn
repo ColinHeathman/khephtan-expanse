@@ -3,9 +3,10 @@
 [ext_resource type="Script" path="res://game/map_place/map_place.gd" id="1_ku83t"]
 [ext_resource type="TileSet" uid="uid://dkpci6mikttiv" path="res://game/map_place/key_tileset.tres" id="3_8oa6f"]
 
-[node name="MapPlace" type="Node2D" groups=["MapPlaces", "Resettable"]]
+[node name="MapPlace" type="Node2D" groups=["MapPlaces"]]
 y_sort_enabled = true
 script = ExtResource("1_ku83t")
+fix_position_at_start = true
 
 [node name="KeyMap" type="TileMap" parent="."]
 unique_name_in_owner = true

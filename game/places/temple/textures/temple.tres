@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://d25h1abkfqpbl"]
+
+[ext_resource type="Texture2D" uid="uid://shfw56addemr" path="res://game/places/temple/textures/temple_spritesheet.png" id="1_7dc3w"]
+
+[resource]
+atlas = ExtResource("1_7dc3w")
+region = Rect2(33, 85, 96, 92)

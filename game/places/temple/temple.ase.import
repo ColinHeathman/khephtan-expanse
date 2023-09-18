@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://dvgpkpn8qm54m"
+path="res://.godot/imported/temple.ase-deb74233b0c81213551635cc87266a97.res"
+
+[deps]
+
+source_file="res://game/places/temple/temple.ase"
+dest_files=["res://.godot/imported/temple.ase-deb74233b0c81213551635cc87266a97.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=true

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=5 format=3 uid="uid://btql0onps7d2e"]
+
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_fyde6"]
+[ext_resource type="Resource" uid="uid://bhapiv16hwngd" path="res://game/places/temple/dialog/tithe.tres" id="1_ysvqp"]
+[ext_resource type="Resource" uid="uid://6wn1cyidvw5m" path="res://game/places/temple/dialog/wisdom_fail.tres" id="2_icaxl"]
+[ext_resource type="Resource" uid="uid://cikrh7g8o7lhg" path="res://game/places/temple/dialog/wisdom_pass.tres" id="3_y5mfl"]
+
+[resource]
+script = ExtResource("1_fyde6")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You find a temple in the desert. There's no one around.
+
+It's probably be cursed."
+bonus_message = ""
+ok_message = "Leave"
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 30
+wisdom_message = "Lift the curse"
+wisdom_pass = ExtResource("3_y5mfl")
+wisdom_fail = ExtResource("2_icaxl")
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 1
+currency_message = "Pay tithe"
+currency_outcome = ExtResource("1_ysvqp")

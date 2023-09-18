@@ -1,8 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://eumfcqpi2e2i"]
+[gd_scene load_steps=10 format=3 uid="uid://eumfcqpi2e2i"]
 
 [ext_resource type="Script" path="res://game/ui/menus/in_game_menu.gd" id="1_m6ktg"]
 [ext_resource type="AudioStream" uid="uid://m6bfa57mwfr" path="res://game/sounds/Select.ogg" id="2_ckmk1"]
 [ext_resource type="Theme" uid="uid://shw4guvfs7oy" path="res://game/ui/themes/pixel_textured/brown/theme.tres" id="3_iju6d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_djswa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kddem"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0h6s5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ewd52"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2qm3a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_orl2q"]
 
 [node name="InGameMenu" type="CanvasLayer"]
 layer = 110
@@ -48,7 +60,7 @@ layout_mode = 2
 [node name="Title" type="Label" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/TitleMargin"]
 custom_minimum_size = Vector2(400, 0)
 layout_mode = 2
-text = "Across the Infinite Sands"
+text = "Across the Khephtan Expanse"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -93,6 +105,34 @@ layout_mode = 2
 value = 50.0
 
 [node name="MarginContainer" type="MarginContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="CenterContainer3" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(225, 30)
+layout_mode = 2
+
+[node name="FullScreenCheckBox" type="CheckBox" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer/CenterContainer3"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_djswa")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_kddem")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_0h6s5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ewd52")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_2qm3a")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_orl2q")
+text = "Fullscreen"
+
+[node name="MarginContainer2" type="MarginContainer" parent="CenterContainer/MarginContainer/Panel/DefaultView/MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 10)
 layout_mode = 2
 
@@ -203,7 +243,7 @@ layout_mode = 2
 
 [node name="Line2" type="Label" parent="CenterContainer/MarginContainer/Panel/ControlsView/MarginContainer/VBoxContainer/CenterContainer5"]
 layout_mode = 2
-text = "M to open the menu"
+text = "ESC or F10 to open the menu"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -252,6 +292,16 @@ layout_mode = 2
 [node name="Programming" type="Label" parent="CenterContainer/MarginContainer/Panel/CreditsView/MarginContainer/VBoxContainer/CenterContainer"]
 layout_mode = 2
 text = "Art & Programming - Colin Heathman"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer3" type="CenterContainer" parent="CenterContainer/MarginContainer/Panel/CreditsView/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(225, 35)
+layout_mode = 2
+
+[node name="Art" type="Label" parent="CenterContainer/MarginContainer/Panel/CreditsView/MarginContainer/VBoxContainer/CenterContainer3"]
+layout_mode = 2
+text = "Additional Art - Jo Vandenheuvel"
 horizontal_alignment = 1
 vertical_alignment = 1
 

@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Dialog" load_steps=2 format=3 uid="uid://dk87tvfgqljrk"]
+[gd_resource type="Resource" script_class="Dialog" load_steps=3 format=3 uid="uid://dk87tvfgqljrk"]
 
+[ext_resource type="Resource" uid="uid://d3rfbi5xsrmea" path="res://game/wanderers/bandit/get_scimitar.tres" id="1_dyxf4"]
 [ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_g48b2"]
 
 [resource]
@@ -13,6 +14,7 @@ Despite a few cuts and bruises,you manage to disarm
  the bandit and they run."
 bonus_message = ""
 ok_message = "OK"
+ok_outcome = ExtResource("1_dyxf4")
 hit_points_range = Array[int]([])
 hit_points_message = ""
 wisdom_dc = 0

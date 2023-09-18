@@ -25,6 +25,7 @@ func _ready() -> void:
 	# Connect signals
 	%MusicSlider.connect("value_changed", self._on_music_slider_value_changed)
 	%FXSlider.connect("value_changed", self._on_fx_slider_value_changed)
+	%FullScreenCheckBox.connect("toggled", self._change_fullscreen_mode)
 	%CreditsButton.connect("pressed", self._show_credits)
 	%StartButton.connect("pressed", self._on_start_button_pressed)
 	%RestartButton.connect("pressed", self._on_restart_button_pressed)
@@ -80,6 +81,12 @@ func _on_controls_ok_button_pressed() -> void:
 		_on_start_button_pressed()
 	else:
 		_show_main()
+
+func _change_fullscreen_mode(fullscreen: bool) -> void:
+	if fullscreen == true:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+	if fullscreen == false:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 
 func _on_music_slider_value_changed(value) -> void:
 	if value == 0:

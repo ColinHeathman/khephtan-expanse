@@ -1,0 +1,27 @@
+[gd_scene load_steps=8 format=3 uid="uid://chb6w7dbrpuhk"]
+
+[ext_resource type="PackedScene" uid="uid://dbp0vyev2mxkk" path="res://game/map_place/map_place.tscn" id="1_vw4q1"]
+[ext_resource type="Texture2D" uid="uid://ca4203gasm170" path="res://game/places/pyramid/textures/pyramid.tres" id="2_pd0to"]
+[ext_resource type="Resource" uid="uid://dkecmtx5rqmfw" path="res://game/places/pyramid/dialog/lose_1.tres" id="2_tho6k"]
+[ext_resource type="Script" path="res://game/dialog/dialog_deck.gd" id="3_e7ysf"]
+[ext_resource type="Texture2D" uid="uid://pd045wyxp0nm" path="res://game/places/pyramid/textures/pyramid_shadow.tres" id="3_lfh6e"]
+[ext_resource type="Resource" uid="uid://d2e2itapvnjvh" path="res://game/places/pyramid/dialog/win_1.tres" id="4_wlj5r"]
+
+[sub_resource type="Resource" id="Resource_mjrv7"]
+script = ExtResource("3_e7ysf")
+dialogs = Array[Resource("res://game/dialog/dialog.gd")]([ExtResource("2_tho6k")])
+
+[node name="Pyramid" instance=ExtResource("1_vw4q1")]
+dialog_deck = SubResource("Resource_mjrv7")
+win_dialog = ExtResource("4_wlj5r")
+visited_dialog = ExtResource("2_tho6k")
+
+[node name="KeyMap" parent="." index="0"]
+layer_0/tile_data = PackedInt32Array(131068, 65536, 0, 131067, 65536, 0, 65532, 65536, 0, 65533, 65536, 0, 65534, 65536, 0, -3, 65536, 0, -65538, 65536, 0, -131074, 65536, 0, -131073, 65536, 0, -196608, 65536, 0, -131071, 65536, 0, -65535, 65536, 0, -65534, 65536, 0, 3, 65536, 0, 2, 65536, 0, 1, 65536, 0, 0, 65536, 0, 65535, 65536, 0, -65536, 65536, 0, -1, 65536, 0, -2, 65536, 0, -65537, 65536, 0, -131072, 65536, 0, 196606, 65536, 0, 196607, 65536, 0, 131072, 65536, 0, 131073, 65536, 0, 65537, 65536, 0, 65538, 65536, 0, 131070, 65536, 0, 131071, 65536, 0, 65536, 65536, 0, 131069, 0, 0, -4, 65536, 0)
+
+[node name="Pyramid" type="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_pd0to")
+
+[node name="PyramidShadow" type="Sprite2D" parent="." index="2"]
+position = Vector2(0, -17)
+texture = ExtResource("3_lfh6e")

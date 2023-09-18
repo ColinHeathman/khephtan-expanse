@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=6 format=3 uid="uid://clskc76ejm45r"]
+
+[ext_resource type="Resource" uid="uid://c8p7hexvqfta8" path="res://game/places/cave/dialog/distract.tres" id="1_0q4tg"]
+[ext_resource type="Resource" uid="uid://cdxrchwkkqq0r" path="res://game/places/cave/dialog/fight_off.tres" id="1_2vp3t"]
+[ext_resource type="Resource" uid="uid://b7ww58srlf6ow" path="res://game/places/cave/dialog/diplo_fail.tres" id="1_wcehf"]
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_xrx88"]
+[ext_resource type="Resource" uid="uid://b0hj4a1bsitq3" path="res://game/places/cave/dialog/diplo_pass.tres" id="2_aqh6q"]
+
+[resource]
+script = ExtResource("1_xrx88")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You try to sneak in but trip on some rocks. You can hear
+some kind of beast asleep inside. It's waking up."
+bonus_message = ""
+ok_message = "Run"
+hit_points_range = Array[int]([2, 3])
+hit_points_message = "Fight it"
+hit_points_outcome = ExtResource("1_2vp3t")
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 25
+diplomacy_message = "Calm the beast. You are great with animals."
+diplomacy_pass = ExtResource("2_aqh6q")
+diplomacy_fail = ExtResource("1_wcehf")
+currency_cost = 1
+currency_message = "Distract it by throwing a coin."
+currency_outcome = ExtResource("1_0q4tg")

@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=5 format=3 uid="uid://dneodtbn0ssqo"]
+
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_pcdqh"]
+[ext_resource type="Texture2D" uid="uid://dc8mukjbahqpd" path="res://game/ui/menus/player_stats_picker/textures/crates_spritesheet.png" id="1_ubq6e"]
+[ext_resource type="Script" path="res://game/dialog/outcome_supplies.gd" id="2_bypew"]
+
+[sub_resource type="Resource" id="Resource_xt2e5"]
+script = ExtResource("2_bypew")
+change = 10
+
+[resource]
+script = ExtResource("1_pcdqh")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You get their attention and tell them about your homeland.
+Then, one by one, the members of the group began to share
+their own tales.
+
+After spending some time with the other travelers, you
+decide it's time to carry on. The group shares some of
+their supplies with you.
+"
+bonus_message = "+10"
+bonus_icon = ExtResource("1_ubq6e")
+ok_message = "OK"
+ok_outcome = SubResource("Resource_xt2e5")
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

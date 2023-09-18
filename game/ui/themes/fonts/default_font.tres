@@ -1,0 +1,9 @@
+[gd_resource type="FontVariation" load_steps=3 format=3 uid="uid://d11su3kdqavb0"]
+
+[ext_resource type="FontFile" uid="uid://cw8s435olymsb" path="res://game/ui/themes/fonts/dn_pixel_regular.otf" id="1_u7f2u"]
+
+[sub_resource type="SystemFont" id="SystemFont_mb2rt"]
+
+[resource]
+base_font = ExtResource("1_u7f2u")
+fallbacks = Array[Font]([SubResource("SystemFont_mb2rt")])

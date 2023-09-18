@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="Dialog" load_steps=2 format=3 uid="uid://dy7el71e7rwkm"]
+[gd_resource type="Resource" script_class="Dialog" load_steps=3 format=3 uid="uid://dy7el71e7rwkm"]
 
 [ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_dor0y"]
+[ext_resource type="Resource" uid="uid://d3rfbi5xsrmea" path="res://game/wanderers/bandit/get_scimitar.tres" id="1_r4loh"]
 
 [resource]
 script = ExtResource("1_dor0y")
@@ -11,6 +12,7 @@ message = "You ask the bandit about their life, you manage to get
 them to rethink their desicions."
 bonus_message = ""
 ok_message = "OK"
+ok_outcome = ExtResource("1_r4loh")
 hit_points_range = Array[int]([])
 hit_points_message = ""
 wisdom_dc = 0

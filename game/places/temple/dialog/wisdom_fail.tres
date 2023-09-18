@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=5 format=3 uid="uid://6wn1cyidvw5m"]
+
+[ext_resource type="Texture2D" uid="uid://bdggaqg7vouny" path="res://game/ui/menus/player_stats_picker/textures/heart_icon.tres" id="1_ms8i6"]
+[ext_resource type="Script" path="res://game/dialog/outcome_damage.gd" id="2_1w5ym"]
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="2_pwqcs"]
+
+[sub_resource type="Resource" id="Resource_p3kax"]
+script = ExtResource("2_1w5ym")
+damage = 1
+
+[resource]
+script = ExtResource("2_pwqcs")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You step inside and speak some random incantations. 
+You feel a weight pressing in from the walls as your 
+words reverberate.
+
+You feel a little worse."
+bonus_message = "-1"
+bonus_icon = ExtResource("1_ms8i6")
+ok_message = "OK"
+ok_outcome = SubResource("Resource_p3kax")
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

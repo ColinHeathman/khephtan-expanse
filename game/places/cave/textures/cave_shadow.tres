@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://cktiibr3eitm"]
+
+[ext_resource type="Texture2D" uid="uid://b2ugay1nnp6m8" path="res://game/places/cave/textures/cave_spritesheet.png" id="1_skryy"]
+
+[resource]
+atlas = ExtResource("1_skryy")
+region = Rect2(10, 19, 147, 124)

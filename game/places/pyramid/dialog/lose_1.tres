@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=3 format=3 uid="uid://dkecmtx5rqmfw"]
+
+[ext_resource type="Resource" uid="uid://cihhyfv0k8ig" path="res://game/places/pyramid/dialog/lose_2.tres" id="1_evctl"]
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="2_y812d"]
+
+[resource]
+script = ExtResource("2_y812d")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You find a collossal pyramid in the desert. This must be
+the place you've been looking for!"
+bonus_message = ""
+ok_message = "Climb the steps"
+ok_outcome = ExtResource("1_evctl")
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

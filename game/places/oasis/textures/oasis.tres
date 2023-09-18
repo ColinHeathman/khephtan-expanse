@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://dp6vcx8g84s6j"]
+
+[ext_resource type="Texture2D" uid="uid://dtjc8g3mn3jp1" path="res://game/places/oasis/textures/oasis_spritesheet.png" id="1_pmwsj"]
+
+[resource]
+atlas = ExtResource("1_pmwsj")
+region = Rect2(-1, 74, 101, 90)

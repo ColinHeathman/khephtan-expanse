@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=3 format=3 uid="uid://dh6mlpb5i1kk0"]
+
+[ext_resource type="Resource" uid="uid://cv0dttgl5bswa" path="res://game/places/pyramid/dialog/win_3.tres" id="1_il03u"]
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_oj7tp"]
+
+[resource]
+script = ExtResource("1_oj7tp")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You arrive at the top of the pyramid. There is a hole in
+one of the bricks.
+
+It looks to be shaped like a scarab..."
+bonus_message = ""
+ok_message = "Use the golden scarab thing..."
+ok_outcome = ExtResource("1_il03u")
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

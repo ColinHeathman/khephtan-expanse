@@ -2,7 +2,9 @@ class_name MapPlace
 extends Node2D
 
 @export var fix_position_at_start: bool = false
+@export var is_pyramid: bool = false
 @export var dialog_deck: DialogDeck
+@export var win_dialog: Dialog
 @export var visited_dialog: Dialog
 
 var _terrain: TileMap
@@ -13,6 +15,7 @@ var visited = false
 func _ready() -> void:
 	if has_node("%Lights"):
 		%Lights.modulate = Color(1.0,1.0,1.0,0.0)
+	self.add_to_group("Resettable")
 
 func _read_keymap() -> void:
 	for cell in %KeyMap.get_used_cells(0):

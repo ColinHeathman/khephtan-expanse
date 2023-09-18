@@ -1,0 +1,28 @@
+[gd_scene load_steps=8 format=3 uid="uid://dixd2tmhurpmd"]
+
+[ext_resource type="PackedScene" uid="uid://dbp0vyev2mxkk" path="res://game/map_place/map_place.tscn" id="1_pndis"]
+[ext_resource type="Texture2D" uid="uid://d25h1abkfqpbl" path="res://game/places/temple/textures/temple.tres" id="2_7mx5h"]
+[ext_resource type="Resource" uid="uid://btql0onps7d2e" path="res://game/places/temple/dialog/temple.tres" id="2_giibc"]
+[ext_resource type="Script" path="res://game/dialog/dialog_deck.gd" id="2_gv7h5"]
+[ext_resource type="Texture2D" uid="uid://clttl2wxo8o8l" path="res://game/places/temple/textures/temple_shadow.tres" id="3_kn4ji"]
+[ext_resource type="Resource" uid="uid://bagyarmact2et" path="res://game/places/temple/dialog/visited.tres" id="4_4owes"]
+
+[sub_resource type="Resource" id="Resource_ic2wa"]
+script = ExtResource("2_gv7h5")
+dialogs = Array[Resource("res://game/dialog/dialog.gd")]([ExtResource("2_giibc")])
+
+[node name="Temple" instance=ExtResource("1_pndis")]
+dialog_deck = SubResource("Resource_ic2wa")
+visited_dialog = ExtResource("4_4owes")
+
+[node name="KeyMap" parent="." index="0"]
+layer_0/tile_data = PackedInt32Array(-1, 65536, 0, 0, 65536, 0, -65536, 65536, 0, 65535, 0, 0)
+
+[node name="Temple" type="Sprite2D" parent="." index="1"]
+position = Vector2(11, -9)
+texture = ExtResource("2_7mx5h")
+
+[node name="TempleShadow" type="Sprite2D" parent="." index="2"]
+position = Vector2(-8, -13)
+texture = ExtResource("3_kn4ji")
+offset = Vector2(0, 10)

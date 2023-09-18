@@ -1,0 +1,34 @@
+{ "frames": {
+   "oasis.ase": {
+    "frame": { "x": 0, "y": 0, "w": 99, "h": 319 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 99, "h": 319 },
+    "sourceSize": { "w": 99, "h": 319 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.3-beta21-x64",
+  "image": "oasis_spritesheet.png",
+  "format": "RGBA8888",
+  "size": { "w": 99, "h": 319 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "sand", "opacity": 255, "blendMode": "normal" },
+   { "name": "grass", "opacity": 255, "blendMode": "normal" },
+   { "name": "water", "opacity": 255, "blendMode": "normal" },
+   { "name": "shadows", "opacity": 255, "blendMode": "normal" },
+   { "name": "trees", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+   { "name": "oasis", "color": "#0000ffff", "keys": [{ "frame": 0, "bounds": {"x": -1, "y": 74, "w": 101, "h": 90 } }] },
+   { "name": "oasis_shadows", "color": "#0000ffff", "keys": [{ "frame": 0, "bounds": {"x": 3, "y": -1, "w": 92, "h": 66 } }] },
+   { "name": "oasis_sand", "color": "#0000ffff", "keys": [{ "frame": 0, "bounds": {"x": 2, "y": 241, "w": 95, "h": 77 } }] },
+   { "name": "oasis_trees", "color": "#0000ffff", "keys": [{ "frame": 0, "bounds": {"x": 4, "y": 167, "w": 91, "h": 66 } }] }
+  ]
+ }
+}

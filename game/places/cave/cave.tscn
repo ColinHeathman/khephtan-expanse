@@ -1,0 +1,26 @@
+[gd_scene load_steps=8 format=3 uid="uid://b5gb8d3sf27xb"]
+
+[ext_resource type="PackedScene" uid="uid://dbp0vyev2mxkk" path="res://game/map_place/map_place.tscn" id="1_us2aj"]
+[ext_resource type="Script" path="res://game/dialog/dialog_deck.gd" id="2_gdvnt"]
+[ext_resource type="Texture2D" uid="uid://bas7wlfex1nyr" path="res://game/places/cave/textures/cave.tres" id="2_xfr80"]
+[ext_resource type="Resource" uid="uid://uwmvvgr3amvx" path="res://game/places/cave/dialog/cave.tres" id="2_yr4pn"]
+[ext_resource type="Texture2D" uid="uid://cktiibr3eitm" path="res://game/places/cave/textures/cave_shadow.tres" id="3_4cp2k"]
+[ext_resource type="Resource" uid="uid://cy5d01ggt0x6g" path="res://game/places/cave/dialog/cave_visited.tres" id="4_lk7cs"]
+
+[sub_resource type="Resource" id="Resource_h71mc"]
+script = ExtResource("2_gdvnt")
+dialogs = Array[Resource("res://game/dialog/dialog.gd")]([ExtResource("2_yr4pn")])
+
+[node name="Cave" instance=ExtResource("1_us2aj")]
+dialog_deck = SubResource("Resource_h71mc")
+visited_dialog = ExtResource("4_lk7cs")
+
+[node name="KeyMap" parent="." index="0"]
+layer_0/tile_data = PackedInt32Array(131070, 0, 0, 131069, 65536, 0, 65533, 65536, 0, -3, 65536, 0, -65538, 65536, 0, -65537, 65536, 0, -131072, 65536, 0, -2, 65536, 0, -1, 65536, 0, -65536, 65536, 0, -65535, 65536, 0, 1, 65536, 0, 0, 65536, 0, 65535, 65536, 0, 65534, 65536, 0, 2, 65536, 0, 65537, 65536, 0, 65536, 65536, 0, 131071, 65536, 0, -65539, 65536, 0, -4, 65536, 0)
+
+[node name="Cave" type="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_xfr80")
+
+[node name="CaveShadow" type="Sprite2D" parent="." index="2" groups=["Shadows"]]
+position = Vector2(-47, -28)
+texture = ExtResource("3_4cp2k")

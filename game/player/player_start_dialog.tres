@@ -13,9 +13,11 @@ script = ExtResource("2_55y82")
 override_minimum_width = 0
 outcome_label = ""
 outcome_color = 0
-message = "After several grueling months of travel,
-you finally arrive at the infamous desert.
-"
+message = "After several grueling months of travel, you finally arrive
+ at the infamous desert.
+
+You've heard of a collosal pyramid somewhere in the 
+area. There's a rumor that "
 bonus_message = "+25"
 bonus_icon = ExtResource("1_tqlpf")
 ok_message = "OK"

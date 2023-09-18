@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=6 format=3 uid="uid://2boo4n85lnck"]
+
+[ext_resource type="Resource" uid="uid://dyh21b5jjt7sn" path="res://game/places/camp/dialog/diplomacy_fail.tres" id="1_7hmdi"]
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_cio8t"]
+[ext_resource type="Resource" uid="uid://dneodtbn0ssqo" path="res://game/places/camp/dialog/diplomacy_pass.tres" id="2_axqhw"]
+[ext_resource type="Resource" uid="uid://bxt5qg2tygjgg" path="res://game/places/camp/dialog/wisdom_fail.tres" id="4_5527h"]
+[ext_resource type="Resource" uid="uid://dttoguyjvsmn0" path="res://game/places/camp/dialog/wisdom_pass.tres" id="5_hs61a"]
+
+[resource]
+script = ExtResource("1_cio8t")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You find a small group of people, gathered around a camp.
+
+They haven't yet noticed you."
+bonus_message = ""
+ok_message = "Leave"
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 20
+wisdom_message = "Sneak around and look for something useful."
+wisdom_pass = ExtResource("5_hs61a")
+wisdom_fail = ExtResource("4_5527h")
+diplomacy_dc = 18
+diplomacy_message = "Introduce yourself and tell them a story."
+diplomacy_pass = ExtResource("2_axqhw")
+diplomacy_fail = ExtResource("1_7hmdi")
+currency_cost = 0
+currency_message = ""

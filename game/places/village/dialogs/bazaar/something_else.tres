@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=5 format=3 uid="uid://vq5vfj5thaug"]
+
+[ext_resource type="Resource" uid="uid://nvyo82nw6msy" path="res://game/places/village/dialogs/bazaar/get_supplies.tres" id="1_k1rcc"]
+[ext_resource type="Resource" uid="uid://by4n7ej8rnth8" path="res://game/places/village/dialogs/bazaar/sell_fail.tres" id="2_0w1lx"]
+[ext_resource type="Resource" uid="uid://ddt8bmljddy3j" path="res://game/places/village/dialogs/bazaar/sell_pass.tres" id="3_ih3qp"]
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="4_38kog"]
+
+[resource]
+script = ExtResource("4_38kog")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "There is a food market. You definitely could use supplies for your travels.                      "
+bonus_message = ""
+ok_message = ""
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 12
+diplomacy_message = "Try and sell some of the exotic food you brought with you."
+diplomacy_pass = ExtResource("3_ih3qp")
+diplomacy_fail = ExtResource("2_0w1lx")
+currency_cost = 2
+currency_message = "Buy supplies"
+currency_outcome = ExtResource("1_k1rcc")

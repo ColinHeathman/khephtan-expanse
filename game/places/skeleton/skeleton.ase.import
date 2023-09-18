@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite.texture"
+type="AtlasTexture"
+uid="uid://b8n753laknodf"
+path="res://.godot/imported/skeleton.ase-1945e23e82fe9f1d28c4e19af2b4f8e1.res"
+
+[deps]
+
+source_file="res://game/places/skeleton/skeleton.ase"
+dest_files=["res://.godot/imported/skeleton.ase-1945e23e82fe9f1d28c4e19af2b4f8e1.res"]
+
+[params]
+
+aseprite_script=""
+generate_atlas_textures=false

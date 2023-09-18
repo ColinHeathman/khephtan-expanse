@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=5 format=3 uid="uid://qt7i75gq3pj3"]
+
+[ext_resource type="Texture2D" uid="uid://dt0pmy3dudfoo" path="res://game/ui/menus/player_stats_picker/textures/coin_icon.tres" id="1_6d7ha"]
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_qxnf7"]
+[ext_resource type="Script" path="res://game/dialog/outcome_currency.gd" id="2_n33lk"]
+
+[sub_resource type="Resource" id="Resource_k4irk"]
+script = ExtResource("2_n33lk")
+cost = 3
+
+[resource]
+script = ExtResource("1_qxnf7")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You're confused by the kid, but before you have a chance
+to respond, he runs away.
+
+A few minutes later, you notice some coins are missing
+from your pockets."
+bonus_message = "-3"
+bonus_icon = ExtResource("1_6d7ha")
+ok_message = "OK"
+ok_outcome = SubResource("Resource_k4irk")
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

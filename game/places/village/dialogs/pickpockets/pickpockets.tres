@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=6 format=3 uid="uid://fh0t77dnuv6q"]
+
+[ext_resource type="Resource" uid="uid://da1yrydd31q5x" path="res://game/places/village/dialogs/pickpockets/currency_pass.tres" id="1_h4mj4"]
+[ext_resource type="Resource" uid="uid://b6qsi3dxr7pom" path="res://game/places/village/dialogs/pickpockets/leave.tres" id="2_el7mi"]
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="3_swmee"]
+[ext_resource type="Resource" uid="uid://qt7i75gq3pj3" path="res://game/places/village/dialogs/pickpockets/wisdom_fail.tres" id="4_lkr2b"]
+[ext_resource type="Resource" uid="uid://cb1pe1b8lhkak" path="res://game/places/village/dialogs/pickpockets/wisdom_pass.tres" id="5_it77o"]
+
+[resource]
+script = ExtResource("3_swmee")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You find a small village in the middle of the desert.
+
+There is a group of small children playing in the 
+street. One of them catches sight of you and runs up.
+
+\"Do you have any games on your phone?\"
+
+You don't know what a phone is. You suspect something
+is up."
+bonus_message = ""
+ok_message = "Ignore them and leave."
+ok_outcome = ExtResource("2_el7mi")
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 15
+wisdom_message = "Figure out what they're up to."
+wisdom_pass = ExtResource("5_it77o")
+wisdom_fail = ExtResource("4_lkr2b")
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 2
+currency_message = "Give the poor kids some money."
+currency_outcome = ExtResource("1_h4mj4")

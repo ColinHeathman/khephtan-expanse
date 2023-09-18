@@ -1,0 +1,33 @@
+[gd_scene load_steps=9 format=3 uid="uid://c5x3liu1fuseq"]
+
+[ext_resource type="PackedScene" uid="uid://dbp0vyev2mxkk" path="res://game/map_place/map_place.tscn" id="1_gnoav"]
+[ext_resource type="Resource" uid="uid://i0ngoxgoropr" path="res://game/places/ruins/dialog/ruins.tres" id="2_pgrrj"]
+[ext_resource type="Texture2D" uid="uid://ca5j5satrcqod" path="res://game/places/ruins/textures/runis_sand.tres" id="2_slqb5"]
+[ext_resource type="Script" path="res://game/dialog/dialog_deck.gd" id="3_ngsd3"]
+[ext_resource type="Texture2D" uid="uid://c6s0qd2ejsrnd" path="res://game/places/ruins/textures/ruins.tres" id="3_or010"]
+[ext_resource type="Texture2D" uid="uid://bw6uda2q4im6p" path="res://game/places/ruins/textures/ruins_shadows.tres" id="4_f5wlj"]
+[ext_resource type="Resource" uid="uid://c8lvs1l8yciq" path="res://game/places/ruins/dialog/visited.tres" id="4_sjdkv"]
+
+[sub_resource type="Resource" id="Resource_e4gwa"]
+script = ExtResource("3_ngsd3")
+dialogs = Array[Resource("res://game/dialog/dialog.gd")]([ExtResource("2_pgrrj")])
+
+[node name="Ruins" instance=ExtResource("1_gnoav")]
+dialog_deck = SubResource("Resource_e4gwa")
+visited_dialog = ExtResource("4_sjdkv")
+
+[node name="KeyMap" parent="." index="0"]
+layer_0/tile_data = PackedInt32Array(-2, 65536, 0, -1, 65536, 0, -65536, 65536, 0, -131072, 65536, 0, -65537, 65536, 0, 65535, 0, 0, 0, 65536, 0)
+
+[node name="RuinsSand" type="Sprite2D" parent="." index="1"]
+z_index = -1
+position = Vector2(0, -11)
+texture = ExtResource("2_slqb5")
+
+[node name="Ruins" type="Sprite2D" parent="." index="2"]
+position = Vector2(0, -11)
+texture = ExtResource("3_or010")
+
+[node name="RuinsShadows" type="Sprite2D" parent="." index="3" groups=["Shadows"]]
+position = Vector2(2, -12)
+texture = ExtResource("4_f5wlj")

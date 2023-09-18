@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="DialogDeck" load_steps=4 format=3 uid="uid://igycmnv1ecml"]
+
+[ext_resource type="Resource" uid="uid://fh0t77dnuv6q" path="res://game/places/village/dialogs/pickpockets/pickpockets.tres" id="1_pssds"]
+[ext_resource type="Script" path="res://game/dialog/dialog_deck.gd" id="1_uyh0p"]
+[ext_resource type="Resource" uid="uid://ikygng1y7d4c" path="res://game/places/village/dialogs/bazaar/bazaar.tres" id="2_kceyg"]
+
+[resource]
+script = ExtResource("1_uyh0p")
+dialogs = Array[Resource("res://game/dialog/dialog.gd")]([ExtResource("2_kceyg"), ExtResource("2_kceyg"), ExtResource("1_pssds")])

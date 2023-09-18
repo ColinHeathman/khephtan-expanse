@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=2 format=3 uid="uid://cp5ll3tqv6mg6"]
+
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="4_n4wkn"]
+
+[resource]
+script = ExtResource("4_n4wkn")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You return to the oasis.
+
+There is nothing more for you here."
+bonus_message = ""
+ok_message = "OK"
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

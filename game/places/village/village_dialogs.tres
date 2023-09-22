@@ -6,4 +6,4 @@
 
 [resource]
 script = ExtResource("1_uyh0p")
-dialogs = Array[Resource("res://game/dialog/dialog.gd")]([ExtResource("2_kceyg"), ExtResource("2_kceyg"), ExtResource("1_pssds")])
+dialogs = Array[Resource("res://game/dialog/dialog.gd")]([ExtResource("2_kceyg"), ExtResource("1_pssds")])

@@ -4,6 +4,7 @@ const player_scn = preload("res://game/player/player.tscn")
 const player_start_dialog = preload("res://game/player/player_start_dialog.tres")
 
 signal reset_game
+signal done_setup
 
 func _ready() -> void:
 	if has_node("/root/Main"):
@@ -20,6 +21,7 @@ func setup() -> void:
 		_setup_map_objects()
 		_setup_game_reset()
 		$/root/DialogMenu.show_dialog(player_start_dialog)
+		done_setup.emit()
 
 func _setup_map() -> void:
 	for map_place in get_tree().get_nodes_in_group("MapPlaces"):

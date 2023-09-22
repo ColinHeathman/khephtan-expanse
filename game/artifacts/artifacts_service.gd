@@ -4,9 +4,9 @@ var has_civic_crown = false:
 	get:
 		return has_civic_crown
 	set(value):
-		has_civic_crown = value
 		if value and not has_civic_crown:
 			$/root/PlayerStatsService.diplomacy += 2
+		has_civic_crown = value
 		if has_civic_crown:
 			%CivicCrownPanel.show()
 			self.show()
@@ -51,9 +51,9 @@ var has_scepter = false:
 	get:
 		return has_scepter
 	set(value):
-		has_scepter = value
 		if value and not has_scepter:
 			$/root/PlayerStatsService.wisdom += 2
+		has_scepter = value
 		if has_scepter:
 			%ScepterPanel.show()
 			self.show()

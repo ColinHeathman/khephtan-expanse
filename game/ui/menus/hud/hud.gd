@@ -1,5 +1,14 @@
 extends CanvasLayer
 
+func _ready() -> void:
+	%SettingsButton.pressed.connect(_show_in_game_menu)
+	
+func _show_in_game_menu() -> void:
+	var show_menu_event = InputEventAction.new()
+	show_menu_event.action = "show_menu"
+	show_menu_event.pressed = true
+	Input.parse_input_event(show_menu_event)
+
 func update_hud() -> void:
 	update_hit_points()
 	update_wisdom()

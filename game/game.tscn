@@ -226,7 +226,7 @@ position = Vector2(351, 52)
 fix_position_at_start = false
 
 [node name="DunePlace11" parent="DuneCluster3" groups=["Resettable"] instance=ExtResource("9_qycf3")]
-position = Vector2(283, -92)
+position = Vector2(298, -119)
 fix_position_at_start = false
 
 [node name="DunePlace12" parent="DuneCluster3" groups=["Resettable"] instance=ExtResource("10_w65n0")]

@@ -19,6 +19,7 @@ func _read_terrain() -> void:
 		var weight = _terrain.get_tile_weight(coord)
 		if weight <= 0:
 			continue
+		assert(coord_to_id(coord) > 0)
 		_astar.add_point(coord_to_id(coord), _terrain.map_to_local(coord), weight)
 
 	for id in _astar.get_point_ids():
@@ -34,12 +35,12 @@ func _read_terrain() -> void:
 				_astar.connect_points(coord_id, neighbor_id)
 
 func coord_to_id(coord: Vector2i):
-	coord += Vector2i(128,128)
+	coord += Vector2i(512,512)
 	return coord.x + (coord.y << 10)
 
 func id_to_coord(id: int):
 	var size = 1 << 10
-	return Vector2i(id % size, id / size) - Vector2i(128,128)
+	return Vector2i(id % size, id / size) - Vector2i(512,512)
 
 func get_navigation_path(from_coord: Vector2i, to_coord: Vector2i) -> Dictionary:
 	var result = {}

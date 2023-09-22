@@ -17,7 +17,8 @@ message = "After several grueling months of travel, you finally arrive
  at the infamous desert.
 
 You've heard of a collosal pyramid somewhere in the 
-area. There's a rumor that "
+area. There's a rumor that whoever can ascend the 
+steps can transcend humanity and become divine."
 bonus_message = "+25"
 bonus_icon = ExtResource("1_tqlpf")
 ok_message = "OK"

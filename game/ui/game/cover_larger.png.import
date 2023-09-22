@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://docbjsi1tyhbn"
-path="res://.godot/imported/caravan_spritesheet.png-866729aee7204e769086538f2d7bf18a.ctex"
+uid="uid://bqyhofvgga25d"
+path="res://.godot/imported/cover_larger.png-5a826a89b2ce5e30cb40f9fc52c82684.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/textures/caravan_spritesheet.png"
-dest_files=["res://.godot/imported/caravan_spritesheet.png-866729aee7204e769086538f2d7bf18a.ctex"]
+source_file="res://game/ui/game/cover_larger.png"
+dest_files=["res://.godot/imported/cover_larger.png-5a826a89b2ce5e30cb40f9fc52c82684.ctex"]
 
 [params]
 

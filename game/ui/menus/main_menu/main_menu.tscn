@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://lqoytsagvx52"]
+[gd_scene load_steps=7 format=3 uid="uid://lqoytsagvx52"]
 
+[ext_resource type="Theme" uid="uid://shw4guvfs7oy" path="res://game/ui/themes/pixel_textured/brown/theme.tres" id="2_6tyuy"]
 [ext_resource type="PlaneMesh" uid="uid://dn1k24xq2p4i5" path="res://game/ui/menus/main_menu/surface.tres" id="3_hxx5q"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_cd14x"]
@@ -46,6 +47,7 @@ _data = {
 [node name="MainMenu" type="Node"]
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+z_index = 100
 material = SubResource("CanvasItemMaterial_cd14x")
 anchors_preset = 15
 anchor_right = 1.0
@@ -79,3 +81,36 @@ libraries = {
 
 [node name="Sunlight" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport"]
 transform = Transform3D(-0.819152, -0.242404, 0.519837, 0, 0.906308, 0.422618, -0.573576, 0.346189, -0.742404, 0, 0, 0)
+
+[node name="LoadingDialog" type="CanvasLayer" parent="."]
+unique_name_in_owner = true
+layer = 120
+visible = false
+
+[node name="CenterContainer" type="CenterContainer" parent="LoadingDialog"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_6tyuy")
+
+[node name="MarginContainer" type="MarginContainer" parent="LoadingDialog/CenterContainer"]
+layout_mode = 2
+
+[node name="Panel" type="PanelContainer" parent="LoadingDialog/CenterContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="LoadingView" type="CenterContainer" parent="LoadingDialog/CenterContainer/MarginContainer/Panel"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="LoadingDialog/CenterContainer/MarginContainer/Panel/LoadingView"]
+layout_mode = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 60
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 60
+
+[node name="Label" type="Label" parent="LoadingDialog/CenterContainer/MarginContainer/Panel/LoadingView/MarginContainer"]
+layout_mode = 2
+text = "Loading..."

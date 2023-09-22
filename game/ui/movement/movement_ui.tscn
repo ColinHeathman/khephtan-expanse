@@ -35,7 +35,7 @@ wait_time = 0.25
 [node name="MoveSoundPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 stream = ExtResource("3_n54j0")
-volume_db = -6.0
+volume_db = 2.0
 pitch_scale = 2.0
 
 [connection signal="gui_input" from="ControlLayer/Control" to="." method="_on_control_gui_input"]

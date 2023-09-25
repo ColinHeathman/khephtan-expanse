@@ -1,0 +1,12 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://dnrgde2nh1w52"]
+
+[ext_resource type="Texture2D" uid="uid://c18hqe0orx3tm" path="res://game/ui/themes/pixel_textured/brown/panel/textures/panel_brown_panel_brown.tres" id="1_27ufw"]
+
+[resource]
+texture = ExtResource("1_27ufw")
+texture_margin_left = 11.0
+texture_margin_top = 11.0
+texture_margin_right = 11.0
+texture_margin_bottom = 11.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1

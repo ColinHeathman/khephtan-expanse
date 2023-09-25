@@ -1,13 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://1dnfxcsadis4"]
+[gd_scene load_steps=8 format=3 uid="uid://1dnfxcsadis4"]
 
 [ext_resource type="PackedScene" uid="uid://dbp0vyev2mxkk" path="res://game/map_place/map_place.tscn" id="1_wj33q"]
-[ext_resource type="Resource" uid="uid://l2om5rjokqht" path="res://game/places/skeleton/dialog/skeleton.tres" id="2_a7s55"]
+[ext_resource type="Resource" uid="uid://l2om5rjokqht" path="res://game/places/skeleton/dialog/skeleton1.tres" id="2_1ddjk"]
 [ext_resource type="Texture2D" uid="uid://cyl716prd36ex" path="res://game/places/skeleton/textures/skeleton_spritesheet.png" id="2_pwfpy"]
+[ext_resource type="Resource" uid="uid://b60cuf7hl2urb" path="res://game/places/skeleton/dialog/skeleton2.tres" id="3_6pc4j"]
 [ext_resource type="Script" path="res://game/dialog/dialog_deck.gd" id="3_sdtrp"]
+[ext_resource type="Resource" uid="uid://b5ouoctqkmaqa" path="res://game/places/skeleton/dialog/skeleton3.tres" id="4_f5phh"]
 
 [sub_resource type="Resource" id="Resource_xvhpa"]
 script = ExtResource("3_sdtrp")
-dialogs = Array[Resource("res://game/dialog/dialog.gd")]([ExtResource("2_a7s55")])
+dialogs = Array[Resource("res://game/dialog/dialog.gd")]([ExtResource("2_1ddjk"), ExtResource("3_6pc4j"), ExtResource("4_f5phh")])
 
 [node name="Skeleton" instance=ExtResource("1_wj33q")]
 dialog_deck = SubResource("Resource_xvhpa")

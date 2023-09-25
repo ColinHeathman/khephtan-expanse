@@ -1,7 +1,7 @@
 [remap]
 
-importer="aseprite.texture"
-type="AtlasTexture"
+importer="aseprite.spritesheet.importer"
+type="Texture2D"
 uid="uid://c6k0yxeyh1abt"
 path="res://.godot/imported/pyramid.aseprite-24c7a847c3daaac63add09f375027f57.res"
 
@@ -12,5 +12,11 @@ dest_files=["res://.godot/imported/pyramid.aseprite-24c7a847c3daaac63add09f37502
 
 [params]
 
-aseprite_script=""
+export_hidden_layers=false
+flatten_layer_groups=false
+split_layers=false
 generate_atlas_textures=true
+generate_spriteframes=false
+read_framerate=true
+sheet_type=0
+keep_json=false

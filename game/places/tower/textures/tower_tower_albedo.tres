@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://bkacbhjaexlbe"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_oovc5"]
+load_path = "res://.godot/imported/tower_spritesheet.png-c6d1f99e78c9b8004afaacae57e4d7f9.ctex"
+
+[resource]
+atlas = SubResource("CompressedTexture2D_oovc5")
+region = Rect2(104, 0, 55, 101)

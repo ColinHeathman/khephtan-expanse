@@ -1,7 +1,7 @@
 [remap]
 
-importer="aseprite.texture"
-type="AtlasTexture"
+importer="aseprite.spritesheet.importer"
+type="Texture2D"
 uid="uid://bkqpuavvimjtp"
 path="res://.godot/imported/sand.ase-48372b3caf9bde2f0a898bcc4c0287a5.res"
 
@@ -12,5 +12,11 @@ dest_files=["res://.godot/imported/sand.ase-48372b3caf9bde2f0a898bcc4c0287a5.res
 
 [params]
 
-aseprite_script=""
+export_hidden_layers=false
+flatten_layer_groups=false
+split_layers=false
 generate_atlas_textures=false
+generate_spriteframes=false
+read_framerate=true
+sheet_type=0
+keep_json=false

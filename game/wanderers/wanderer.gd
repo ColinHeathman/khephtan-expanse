@@ -14,7 +14,7 @@ signal moving(bool)
 @export var visited_interaction: Dialog
 @export var remove_on_interaction: bool = false
 @export var pursues_player: bool = false
-@export var pursuit_move_points: int = 7
+@export var pursuit_move_points: int = 4
 var move_points_remaining: int
 var player_visited: bool = false
 
@@ -64,12 +64,12 @@ func _next_move() -> void:
 	if (
 		"weights" not in _nav_path
 		or _nav_path_i >= _nav_path.weights.size()
-		or move_points_remaining - _nav_path.weights[_nav_path_i] <= 0
+		or move_points_remaining - min(_nav_path.weights[_nav_path_i], 2) <= 0
 	):
 		_stop_move()
 		return
 	
-	move_points_remaining -= _nav_path.weights[_nav_path_i]
+	move_points_remaining -= 1
 	%MoveSoundPlayer.play()
 	self.move_to_coord(_nav_path.path[_nav_path_i])
 	

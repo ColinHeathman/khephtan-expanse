@@ -1,7 +1,7 @@
 [remap]
 
-importer="aseprite.texture"
-type="AtlasTexture"
+importer="aseprite.spritesheet.importer"
+type="Texture2D"
 uid="uid://dy6cdt14nfa3g"
 path="res://.godot/imported/oasis.ase-1cc9fa01964c392aafea7e53be34763f.res"
 
@@ -12,5 +12,11 @@ dest_files=["res://.godot/imported/oasis.ase-1cc9fa01964c392aafea7e53be34763f.re
 
 [params]
 
-aseprite_script=""
+export_hidden_layers=false
+flatten_layer_groups=false
+split_layers=false
 generate_atlas_textures=true
+generate_spriteframes=false
+read_framerate=true
+sheet_type=0
+keep_json=false

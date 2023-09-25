@@ -18,7 +18,7 @@ message = "\"Thanks!\" the kid runs back to his friends.
 A moment later, they come back with a strange crown
 made out of leaves.
 
-\"Here, you can have this weird hat we found\""
+\"Here, you can have this weird crown we found\""
 bonus_message = "Civic Crown"
 bonus_icon = ExtResource("1_de1fk")
 ok_message = "OK"

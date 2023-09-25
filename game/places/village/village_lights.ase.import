@@ -1,7 +1,7 @@
 [remap]
 
-importer="aseprite.texture"
-type="AtlasTexture"
+importer="aseprite.spritesheet.importer"
+type="Texture2D"
 uid="uid://dk8wq73dui5sn"
 path="res://.godot/imported/village_lights.ase-7e280da6efa8e3b9910980dfe233f8fd.res"
 
@@ -12,5 +12,11 @@ dest_files=["res://.godot/imported/village_lights.ase-7e280da6efa8e3b9910980dfe2
 
 [params]
 
-aseprite_script=""
+export_hidden_layers=false
+flatten_layer_groups=false
+split_layers=false
 generate_atlas_textures=true
+generate_spriteframes=false
+read_framerate=true
+sheet_type=0
+keep_json=false

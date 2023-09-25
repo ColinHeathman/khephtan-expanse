@@ -1,0 +1,40 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://fabcmyo8v8d4"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hxmpm"]
+load_path = "res://.godot/imported/campfire_spritesheet.png-c9f679b60591b3d10edfa8233f736856.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_52r2u"]
+atlas = SubResource("CompressedTexture2D_hxmpm")
+region = Rect2(0, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_43liv"]
+atlas = SubResource("CompressedTexture2D_hxmpm")
+region = Rect2(8, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ww3ub"]
+atlas = SubResource("CompressedTexture2D_hxmpm")
+region = Rect2(16, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ywdnm"]
+atlas = SubResource("CompressedTexture2D_hxmpm")
+region = Rect2(24, 0, 8, 8)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_52r2u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_43liv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ww3ub")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ywdnm")
+}],
+"loop": true,
+"name": &"burn-loop",
+"speed": 10.0
+}]

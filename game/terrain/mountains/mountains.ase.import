@@ -1,7 +1,7 @@
 [remap]
 
-importer="aseprite.texture"
-type="AtlasTexture"
+importer="aseprite.spritesheet.importer"
+type="Texture2D"
 uid="uid://chab2y8kfdun"
 path="res://.godot/imported/mountains.ase-1a0e09fcecec1976cc5acb9742fcffce.res"
 
@@ -12,5 +12,11 @@ dest_files=["res://.godot/imported/mountains.ase-1a0e09fcecec1976cc5acb9742fcffc
 
 [params]
 
-aseprite_script=""
+export_hidden_layers=false
+flatten_layer_groups=false
+split_layers=false
 generate_atlas_textures=true
+generate_spriteframes=false
+read_framerate=true
+sheet_type=0
+keep_json=false

@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://bjj3nd85ficpi"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_i8qbp"]
+load_path = "res://.godot/imported/village_lights_spritesheet.png-7ce6c60fcf460b8adc1579201e229888.ctex"
+
+[resource]
+atlas = SubResource("CompressedTexture2D_i8qbp")
+region = Rect2(0, 32, 96, 90)

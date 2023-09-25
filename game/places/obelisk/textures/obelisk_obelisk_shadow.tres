@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://dsj1svsxjvd5d"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2ouv4"]
+load_path = "res://.godot/imported/obelisk_spritesheet.png-5b049aec7a8f777eb9a2d18331da57f3.ctex"
+
+[resource]
+atlas = SubResource("CompressedTexture2D_2ouv4")
+region = Rect2(0, -1, 95, 95)

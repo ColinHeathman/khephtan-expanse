@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://d3yvyaio458t1"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kkdgg"]
+load_path = "res://.godot/imported/dunes_spritesheet.png-4beb4e7aa5b6e195221055a374f10667.ctex"
+
+[resource]
+atlas = SubResource("CompressedTexture2D_kkdgg")
+region = Rect2(0, 0, 97, 31)

@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://dckbs2u3e3opi"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iqhgp"]
+load_path = "res://.godot/imported/oasis_spritesheet.png-2d2f273f229cb809bf5a4969fed3098a.ctex"
+
+[resource]
+atlas = SubResource("CompressedTexture2D_iqhgp")
+region = Rect2(4, 167, 91, 66)

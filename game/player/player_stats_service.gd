@@ -93,3 +93,4 @@ func on_game_reset() -> void:
 	low_supplies_warning = 0
 	hit_points = constitution
 	supplies = 0
+	currency = 5

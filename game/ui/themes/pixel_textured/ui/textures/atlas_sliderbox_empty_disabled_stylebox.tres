@@ -1,0 +1,12 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://bsc77xvq3bvlp"]
+
+[ext_resource type="Texture2D" uid="uid://xp1a5veuic2a" path="res://game/ui/themes/pixel_textured/ui/textures/atlas_sliderbox_empty_disabled.tres" id="1_c2f8s"]
+
+[resource]
+texture = ExtResource("1_c2f8s")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1

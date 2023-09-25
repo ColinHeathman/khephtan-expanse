@@ -7,7 +7,7 @@
 [ext_resource type="Script" path="res://game/dialog/dialog_deck.gd" id="3_js3w0"]
 [ext_resource type="Resource" uid="uid://bs05lrpc5g686" path="res://game/places/camp/dialog/visited_dialog.tres" id="4_fjnmn"]
 [ext_resource type="Texture2D" uid="uid://bg053xboaaa1v" path="res://game/places/camp/textures/tent_bg.tres" id="4_y1s4f"]
-[ext_resource type="SpriteFrames" uid="uid://b6t5efq7e6kt4" path="res://game/places/camp/campfire.ase" id="5_68jfv"]
+[ext_resource type="SpriteFrames" uid="uid://fabcmyo8v8d4" path="res://game/places/camp/textures/campfire_spriteframes.tres" id="8_g27ou"]
 
 [sub_resource type="Resource" id="Resource_ytml0"]
 script = ExtResource("3_js3w0")
@@ -54,18 +54,16 @@ texture = ExtResource("4_y1s4f")
 
 [node name="CampfireDay" type="AnimatedSprite2D" parent="." index="4"]
 position = Vector2(0, -10)
-sprite_frames = ExtResource("5_68jfv")
+sprite_frames = ExtResource("8_g27ou")
 animation = &"burn-loop"
 autoplay = "burn-loop"
-frame_progress = 0.145999
 
 [node name="CampfireNight" type="AnimatedSprite2D" parent="." index="5" groups=["Lights"]]
 material = SubResource("CanvasItemMaterial_pq6av")
 position = Vector2(0, -10)
-sprite_frames = ExtResource("5_68jfv")
+sprite_frames = ExtResource("8_g27ou")
 animation = &"burn-loop"
 autoplay = "burn-loop"
-frame_progress = 0.145999
 
 [node name="CampfireNightLight" type="Sprite2D" parent="." index="6"]
 material = SubResource("CanvasItemMaterial_v18nx")

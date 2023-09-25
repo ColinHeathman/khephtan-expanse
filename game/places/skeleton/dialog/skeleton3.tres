@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="Dialog" load_steps=5 format=3 uid="uid://b5ouoctqkmaqa"]
+
+[ext_resource type="Texture2D" uid="uid://bf0ards3snrlo" path="res://game/ui/menus/player_stats_picker/textures/book_icon.tres" id="1_wdmrg"]
+[ext_resource type="Script" path="res://game/dialog/outcome_wisdom.gd" id="2_m7tg3"]
+[ext_resource type="Script" path="res://game/dialog/dialog.gd" id="3_2tfd7"]
+
+[sub_resource type="Resource" id="Resource_78qtq"]
+script = ExtResource("2_m7tg3")
+change = 1
+
+[resource]
+script = ExtResource("3_2tfd7")
+override_minimum_width = 0
+outcome_label = ""
+outcome_color = 0
+message = "You find the partially eaten remains of a poor adventurer
+ in the desert.
+
+Looks like he was attacked by a giant scorpion. Good thing
+you know better."
+bonus_message = "+1"
+bonus_icon = ExtResource("1_wdmrg")
+ok_message = "OK"
+ok_outcome = SubResource("Resource_78qtq")
+hit_points_range = Array[int]([])
+hit_points_message = ""
+wisdom_dc = 0
+wisdom_message = ""
+diplomacy_dc = 0
+diplomacy_message = ""
+currency_cost = 0
+currency_message = ""

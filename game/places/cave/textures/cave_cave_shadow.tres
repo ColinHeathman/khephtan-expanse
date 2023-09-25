@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://dmgue14by16i7"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_477py"]
+load_path = "res://.godot/imported/cave_spritesheet.png-565cbc83c61d2dee0910daf653fc83b7.ctex"
+
+[resource]
+atlas = SubResource("CompressedTexture2D_477py")
+region = Rect2(10, 19, 147, 124)

@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://beaym55r0a1rt"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jo87r"]
+load_path = "res://.godot/imported/pyramid_spritesheet.png-540bbe2539e2789a137f01cdff4ce208.ctex"
+
+[resource]
+atlas = SubResource("CompressedTexture2D_jo87r")
+region = Rect2(0, 0, 317, 171)

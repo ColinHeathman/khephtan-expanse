@@ -56,7 +56,7 @@ window/stretch/aspect="keep_width"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/aseprite/plugin.cfg")
+enabled=PackedStringArray("res://addons/aseprite_spritesheet_importer/plugin.cfg")
 
 [gui]
 

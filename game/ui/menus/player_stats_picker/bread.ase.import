@@ -1,7 +1,7 @@
 [remap]
 
-importer="aseprite.texture"
-type="AtlasTexture"
+importer="aseprite.spritesheet.importer"
+type="Texture2D"
 uid="uid://mfyupei7af10"
 path="res://.godot/imported/bread.ase-7dbde0cb6ff1e3664776df485d4bcbb2.res"
 
@@ -12,5 +12,11 @@ dest_files=["res://.godot/imported/bread.ase-7dbde0cb6ff1e3664776df485d4bcbb2.re
 
 [params]
 
-aseprite_script=""
+export_hidden_layers=false
+flatten_layer_groups=false
+split_layers=false
 generate_atlas_textures=false
+generate_spriteframes=false
+read_framerate=true
+sheet_type=0
+keep_json=false

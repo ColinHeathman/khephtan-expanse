@@ -1,7 +1,7 @@
 [remap]
 
-importer="aseprite.texture"
-type="AtlasTexture"
+importer="aseprite.spritesheet.importer"
+type="Texture2D"
 uid="uid://b65qv7yjx72go"
 path="res://.godot/imported/key_tileset.ase-391d4126d047393f98947328c7c52c3e.res"
 
@@ -12,5 +12,11 @@ dest_files=["res://.godot/imported/key_tileset.ase-391d4126d047393f98947328c7c52
 
 [params]
 
-aseprite_script=""
+export_hidden_layers=false
+flatten_layer_groups=false
+split_layers=false
 generate_atlas_textures=false
+generate_spriteframes=false
+read_framerate=true
+sheet_type=0
+keep_json=false

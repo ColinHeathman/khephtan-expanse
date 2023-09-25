@@ -1,7 +1,7 @@
 [remap]
 
-importer="aseprite.texture"
-type="AtlasTexture"
+importer="aseprite.spritesheet.importer"
+type="Texture2D"
 uid="uid://b8n753laknodf"
 path="res://.godot/imported/skeleton.ase-1945e23e82fe9f1d28c4e19af2b4f8e1.res"
 
@@ -12,5 +12,11 @@ dest_files=["res://.godot/imported/skeleton.ase-1945e23e82fe9f1d28c4e19af2b4f8e1
 
 [params]
 
-aseprite_script=""
+export_hidden_layers=false
+flatten_layer_groups=false
+split_layers=false
 generate_atlas_textures=false
+generate_spriteframes=false
+read_framerate=true
+sheet_type=0
+keep_json=false

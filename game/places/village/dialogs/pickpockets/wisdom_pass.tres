@@ -1,15 +1,29 @@
-[gd_resource type="Resource" script_class="Dialog" load_steps=2 format=3 uid="uid://cb1pe1b8lhkak"]
+[gd_resource type="Resource" script_class="Dialog" load_steps=5 format=3 uid="uid://cb1pe1b8lhkak"]
 
 [ext_resource type="Script" path="res://game/dialog/dialog.gd" id="1_564pv"]
+[ext_resource type="Texture2D" uid="uid://bf0ards3snrlo" path="res://game/ui/menus/player_stats_picker/textures/book_icon.tres" id="1_px4fw"]
+[ext_resource type="Script" path="res://game/dialog/outcome_wisdom.gd" id="2_cgf88"]
+
+[sub_resource type="Resource" id="Resource_i8eh3"]
+script = ExtResource("2_cgf88")
+change = 1
 
 [resource]
 script = ExtResource("1_564pv")
 override_minimum_width = 0
 outcome_label = ""
 outcome_color = 0
-message = ""
-bonus_message = ""
+message = "You're confused by the kid, but know it's just a distraction.
+
+You notice there's another kid just behind you. When you
+turn to face him, he bolts in the opposite direction.
+
+You won't forget this.
+"
+bonus_message = "+1"
+bonus_icon = ExtResource("1_px4fw")
 ok_message = "OK"
+ok_outcome = SubResource("Resource_i8eh3")
 hit_points_range = Array[int]([])
 hit_points_message = ""
 wisdom_dc = 0

@@ -84,7 +84,7 @@ func _ready() -> void:
 	%ScepterPanel.mouse_exited.connect(_hide_tooltip.bind(%ScepterTooltip))
 	%ScarabKeyPanel.mouse_entered.connect(_show_tooltip.bind(%ScarabKeyTooltip))
 	%ScarabKeyPanel.mouse_exited.connect(_hide_tooltip.bind(%ScarabKeyTooltip))
-	self.add_to_group("Ressettable")
+	self.add_to_group("Resettable")
 
 func _show_tooltip(tooltip: Node2D) -> void:
 	tooltip.show()
@@ -98,5 +98,5 @@ func on_game_reset():
 	self.has_lantern = false
 	self.has_spyglass = false
 	self.has_scepter = false
-	self.has_scarabKey = false
+	self.has_scarab_key = false
 	self.hide()

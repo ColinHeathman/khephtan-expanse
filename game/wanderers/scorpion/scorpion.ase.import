@@ -1,7 +1,7 @@
 [remap]
 
-importer="aseprite.texture"
-type="AtlasTexture"
+importer="aseprite.spritesheet.importer"
+type="Texture2D"
 uid="uid://dwad7ia27exow"
 path="res://.godot/imported/scorpion.ase-624adff407d33cb30c22ea16fb85153b.res"
 
@@ -12,5 +12,11 @@ dest_files=["res://.godot/imported/scorpion.ase-624adff407d33cb30c22ea16fb85153b
 
 [params]
 
-aseprite_script=""
+export_hidden_layers=false
+flatten_layer_groups=false
+split_layers=false
 generate_atlas_textures=false
+generate_spriteframes=false
+read_framerate=true
+sheet_type=0
+keep_json=false

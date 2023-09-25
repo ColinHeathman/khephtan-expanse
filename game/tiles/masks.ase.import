@@ -1,7 +1,7 @@
 [remap]
 
-importer="aseprite.texture"
-type="AtlasTexture"
+importer="aseprite.spritesheet.importer"
+type="Texture2D"
 uid="uid://cwuopwh7e2w2h"
 path="res://.godot/imported/masks.ase-eccf10a9325ec73b71977420af38a551.res"
 
@@ -12,5 +12,11 @@ dest_files=["res://.godot/imported/masks.ase-eccf10a9325ec73b71977420af38a551.re
 
 [params]
 
-aseprite_script=""
+export_hidden_layers=false
+flatten_layer_groups=false
+split_layers=false
 generate_atlas_textures=false
+generate_spriteframes=false
+read_framerate=true
+sheet_type=0
+keep_json=false

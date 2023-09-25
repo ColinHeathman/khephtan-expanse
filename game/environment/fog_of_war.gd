@@ -15,6 +15,12 @@ enum TileVisibility {
 var _player: Player
 var _revealed_cells: Array[Vector2i] = []
 
+func _ready() -> void:
+	self.add_to_group("Resettable")
+
+func on_game_reset():
+	self.reset(Rect2i(-100, -300, 300, 600))
+
 func reset(rect: Rect2i):
 	for y in range(rect.position.y, rect.size.y):
 		for x in range(rect.position.x, rect.size.x):
